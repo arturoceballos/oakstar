@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Nature Wordpress Theme Documentation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Description">
+        <meta name="author" content="Autor">
+    
+        <!-- loading the css -->
+        <link href="assets/css/bootstrap.css" rel="stylesheet">
+        <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+        <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+        
+		<style type="text/css">
+        body {
+            padding-bottom: 40px;
+        }
+		
+		section {padding: 60px 0 0 0;}
+        </style>
+        
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    
+        <!-- Various Icons (Favicon, Touch Icon,... -->
+        <link rel="shortcut icon" href="assets/img/favicon.ico">
+        <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.png">
+        
+    </head>
+    
+    
+        
+    <body data-spy="scroll" data-target=".navbar" id="top">
+    
+        <!-- ========================= NAVIGATION BAR >> START ========================= -->
+        <div class="navbar navbar-fixed-top navbar-inverse">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+                    <a class="brand" href="#overview">Nature WP Theme</a><!-- TIP: Change this for the name of your file -->
+                    <div class="nav-collapse">
+                        <ul class="nav">
+                            <li><a href="#theme-installation">Installation</a></li>
+                            <li><a href="#navigation">Navigation</a></li>
+                            <li><a href="#header-slider">Header Slider</a></li>
+                            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Adding Pages<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#service">Service Page</a></li>
+                                    <li><a href="#about">About Page</a></li>
+                                    <li><a href="#portfolio">Portfolio Page</a></li>
+                                    <li><a href="#contact">Contact Page</a></li>
+                                    <li><a href="#blog">Blog Page</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#toption-page">Theme Options</a></li>
+                            <li><a href="#demo-data">Demo Data</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ========================= NAVIGATION BAR >> END ========================= -->
+    
+    
+    
+        <!-- ========================= MAIN CONTAINER >> START ========================= -->
+        <div class="container">
+        
+            <!-- ========================= SECTION: OVERVIEW >> START ========================= -->
+            <section id="overview">
+            
+                <div class="hero-unit">
+                    <h1>Nature Theme - Documentation</h1>
+                    <p>Responsive One page Html5 Wordpress theme &hearts; by <a href="http://themeforest.net/user/metrothemes">Metrothemes</a></p>
+                    <p class="well well-small">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="#">here</a>. Thanks so much!</p>
+                    <!--div class="row-fluid">
+                        <div class="span3"><a href="#nowhere" class="btn btn-primary btn-large btn-block">Item Support</a></div>
+                        <div class="span3"><a href="#nowhere" class="btn btn-inverse btn-large btn-block">Support Forum</a></div>
+                        <div class="span3"><a href="#changelog" role="button" class="btn btn-success btn-large btn-block" data-toggle="modal">Changelog</a></div>
+                        <div class="span3"><a href="#credits" role="button" class="btn btn-info btn-large btn-block" data-toggle="modal">Credits</a></div>
+                    </div-->
+    
+                </div>
+                
+                <hr>
+                
+                <div class="row-fluid">
+                    <div class="span3">
+                        <table width="100%">
+                            <tr>
+                                <td>Author:</td>
+                                <td><a href="http://themeforest.net/user/metrothemes">Metrothemes</a></td>
+                            </tr>
+                            <tr>
+                                <td>Contact:</td>
+                                <td><a href="#nowhere">devmetrothemes@gmail.com</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="span3">
+                        <table width="100%">
+                            <tr>
+                                <td>Author URL:</td>
+                                <td><a href="#nowhere">http://metrothemes.me</a></td>
+                            </tr>
+                            <tr>
+                                <td>Item URL:</td>
+                                <td><a href="#nowhere">Coming Soon</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="span3">
+                        <table width="100%">
+                            <tr>
+                                <td>Current Version:</td>
+                                <td>1.6</td>
+                            </tr>
+                            <tr>
+                                <td>Documentation Version</td>
+                                <td>1.1</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="span3">
+                        <table width="100%">
+                            <tr>
+                                <td>Created:</td>
+                                <td>2013-06-20</td>
+                            </tr>
+                            <tr>
+                                <td>Modified:</td>
+                                <td>2013-10-2</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+                <hr>
+                
+            </section>
+            <!-- ========================= SECTION: OVERVIEW >> END ========================= -->
+  <hr />
+      <!-- ========================= SECTION: Theme Installation >> START ========================= -->
+            <section id="theme-installation">
+                <div class="page-header">
+                    <h1>Theme Installation <small>Installtion & Permalinks</small></h1>
+                </div>
+            
+                <div class="alert"><a class="close" data-dismiss="alert">×</a> <strong>Note!</strong> Nature should install perfectly first time &amp; every time! If you have any issues installing your theme. Visit this faq: <a target="_blank" href="http://support.envato.com/index.php?/Live/Knowledgebase/Article/View/269/0/my-wordpress-theme-isnt-working-what-should-i-do">Solving Broken Theme/Stylesheet Missing WordPress Theme Issues</a>
+                </div>
+                <hr />
+            
+                <div class="row">
+                    <div class="span12">
+                        <h3>Theme Installation</h3>
+                        <p>To install your theme in WordPress you must navigate to the menu <b>"Appearance"</b> on the left and then the submenu <b>"Themes"</b>. From that page you should see your current theme "Twenty Eleven" by default OR whatever theme you currently have. Now click the <b>"Install Themes"</b> tab and then the text button at the top <b>"Upload"</b>. You then should click Choose File and find your theme files on your computer and upload them. <b>Note: You are only uploading the folder "NatureWPTheme.zip" Your final step is to "Activate" your theme.</b></p>
+                    </div>
+                </div>  
+
+                <hr />
+
+                <div class="row">
+                        <div class="span12">
+                            <h3>Modify Your Permalinks <small>Get your URL's to display post names instead of numbers</small></h3>
+                            <p>By default the pagenames will be website.com/p15 instead of website.com/about. To fix this go to "Settings" &gt; "Permalinks" and my recommendation is to change the Common Settings to "Day and name".<b> After choosing "Day and Name", Click "Save Changes" and your done. Your urls will now display a proper Permalink structure.</b></p>
+                        </div>
+                    </div>
+                <hr />
+            </section>
+            <!-- ========================= SECTION: Theme Installation >> END ========================= -->
+  <hr />
+          
+            <!-- ========================= SECTION: Setting up the homepage >> START ========================= -->
+            <section id="navigation">
+                <div class="page-header">
+                    <h1>Setting up the homepage</h1>
+                </div>
+            
+                
+                <div class="row">
+                    <div class="span4">
+                        <h3>Page Navigation</h3>
+                        <p>Choose what pages you want in the Main menu.</p>
+                    </div>
+                    <div class="span8">
+                        <div class="thumbnail"> 
+                            <img alt="" src="assets/img/1_image.png">
+                        </div>
+                    </div>
+                </div>  
+                
+                <hr/>
+
+                <div class="row">
+                    <div class="span4">
+                        <h3>Blog Link In Navigation</h3>
+                        <p>The "Blog" item is optional and will be visible only if you select a blog page in the theme options panel:</p>
+                    </div>
+                    <div class="span8">
+                        <div class="thumbnail"> 
+                            <img alt="" src="assets/img/2_image.png">
+                        </div>
+                    </div>
+                </div> 
+				
+                <div class="row">
+                    <div class="span4">
+                        <h3>How to page Order</h3>
+                        <p>When you create a page ,set the page order like for first page 1 for 2nd page set 2, you will find the page order option in the right section of add new page</p>
+                    </div>
+                    <div class="span8">
+                        <div class="thumbnail"> 
+                            <img alt="" src="assets/img/23_image.png">
+                        </div>
+                    </div>
+                </div>               
+            </section>
+            <!-- ========================= SECTION: Setting up the homepage >> END ========================= -->
+  <hr />            
+            <!-- ========================= SECTION: Header Slider >> START ========================= -->
+                <section id="header-slider">
+                    <div class="page-header">
+                        <h1>Header Slider</h1>
+                    </div>
+
+                    <div class="row">
+                        <div class="span4">
+                            <h3>Add Header Slider Image's</h3>
+                            <ol>
+                                <li>Goto "Header Slider" and click "Add new slide"</li>
+                                <li>Give Slider Title Name</li>
+                                <li>Only Check For First slider Item</li>
+                                <li>Upload Image , Image Size 1200x604px Recommend</li>
+                                <li>Slider caption Formate<br>
+                                    <pre class="prettyprint linenums">
+                                        &lt;h1&gt;Hello&lt;/h1&gt;
+                                        &lt;h2&gt;Welcome To Nature&lt;/h2&gt;
+                                        &lt;p&gt;the green creatives Group&lt;/p&gt;
+                                    </pre>                                    
+                                </li>
+                                <li>Click Publish</li>                                                              
+                            </ol>
+                        </div>
+                        <div class="span8">
+                            <div class="thumbnail"> 
+                                <img alt="" src="assets/img/3_image.png">
+                            </div>
+                        </div>
+                    </div>                      
+                </section>
+            <!-- ========================= SECTION: Header Slider >> END ========================= -->
+  <hr />
+
+            <!-- ========================= SECTION: Service Page>> START ========================= -->
+                <section id="service">
+                    <div class="page-header">
+                        <h1>Service Page</h1>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="span12">
+                            <div class="thumbnail"> 
+                                <img alt="" src="assets/img/4_image.png">
+                            </div>
+                        </div>
+
+
+                        <div class="span12">
+                            <h3>Prepare Service Page</h3>
+                            <ol>
+                                <li>Go To pages and click "Add New"</li>
+                                <li>Give "Service" As a page title</li>
+                                <li><h3>Put Short code for service item </h3>
+                                
+
+                                     <h4>For this style service</h4>
+
+                                        <div class="thumbnail"> 
+                                           
+                                            <img alt="" src="assets/img/5_image.png">
+                                        </div> 
+                                  
+                                    <h4>Short-Code</h4>
+                                    <pre>
+[service-row]
+
+[service title="Lab Ideas"  image="http://localhost/view/wp-content/uploads/2013/04/service-1.png"  text="Lorem ipsum dolor slo onsec tueraliquet Morbi nec In Curabitur lreaoreet nisl lorem in pellente e vidicus pannel impirus sadintas"  url="#"]
+
+[service title=Green Therapy"  image="http://localhost/view/wp-content/uploads/2013/04/service-2.png"  text="Lorem ipsum dolor slo onsec tueraliquet Morbi nec In Curabitur lreaoreet nisl lorem in pellente e vidicus pannel impirus sadintas"  url="#"]
+
+[service title=Support Team"  image="http://localhost/view/wp-content/uploads/2013/04/service-3.png"  text="Lorem ipsum dolor slo onsec tueraliquet Morbi nec In Curabitur lreaoreet nisl lorem in pellente e vidicus pannel impirus sadintas"  url="#"]
+
+[/service-row]
+
+
+                                    </pre>
+                         
+                                     <h4>For this style service</h4>
+          
+                                        <div class="thumbnail"> 
+                                           
+                                            <img alt="" src="assets/img/6_image.png">
+                                        </div> 
+                                  
+                                    <h4>Short-Code</h4>
+                                    <pre>
+[other-service-row]
+
+[other-service icon="http://localhost/view/wp-content/uploads/2013/04/other-service-2-Copy.png" title="Design Therapy" text="Lorem ipsum dolor slo onsec designs tueraliquet Morbi nec In Curabitur nel"]
+
+[other-service icon="http://localhost/view/wp-content/uploads/2013/04/other-service-2-Copy.png" title="Design Therapy" text="Lorem ipsum dolor slo onsec designs tueraliquet Morbi nec In Curabitur nel"]
+
+[other-service icon="http://localhost/view/wp-content/uploads/2013/04/other-service-2-Copy.png" title="Design Therapy" text="Lorem ipsum dolor slo onsec designs tueraliquet Morbi nec In Curabitur nel"]
+
+[other-service icon="http://localhost/view/wp-content/uploads/2013/04/other-service-2-Copy.png" title="Design Therapy" text="Lorem ipsum dolor slo onsec designs tueraliquet Morbi nec In Curabitur nel"]
+
+[/other-service-row]
+
+
+                                    </pre>
+
+                                </li>
+
+                                <li>A short title about this page or section</li>
+                                <li>Click Publish</li>                                                         
+                            </ol>                            
+                        </div>
+
+                    </div>                      
+                </section>
+            <!-- ========================= SECTION: Service Page>> END ========================= -->
+  <hr />
+            <!-- ========================= SECTION: About Page >> START ========================= -->
+                <section id="about">
+                    <div class="page-header">
+                        <h1>About Page</h1>
+                    </div>
+
+                    <div class="row">
+                         <div class="span12">
+                            <div class="thumbnail"> 
+                                <img alt="" src="assets/img/7_image.png">
+                            </div>
+                        </div>                       
+                        <div class="span12">
+                            <h3>Prepare About Page</h3>
+                            <p></p>
+                            <ol>
+                                <li>Go To pages and click "Add New"</li>
+                                <li>Give "About" As a page title</li>
+                                <li><h3>Put Short code for about page </h3>
+
+<div class="row-fluid">
+    <div class="span11"><h4>section-info short-code</h4></div>          
+    <div class="span5">
+        <pre>
+[section-info]Lorem ipsum dolor slo onsec tueraliquet Morbi nec In Curabitur lreaoreet nisl lorem in
+
+pellente e vidicus pannel impirus sadintas[/section-info]
+        </pre>
+    </div>
+
+    <div class="span6">
+        <div class="thumbnail"> 
+            <img alt="" src="assets/img/8_image.png">
+        </div>
+    </div>
+</div>
+
+<div class="row-fluid">
+    <div class="span11"><h4>Team short-code</h4></div>          
+    <div class="span5">
+        <pre>
+[team]
+        </pre>
+    </div>
+
+    <div class="span6">
+        <p>Add your team membar from "Team Membars Post type"</p>
+    </div>
+</div>
+
+<div class="row-fluid">
+    <div class="span11"><h4>Testimonial&skills short-code</h4></div>
+    <div class="span12">
+        <div class="thumbnail"> 
+            <img alt="" src="assets/img/9_image.png">
+        </div>
+    </div>              
+    <div class="span12">
+        <pre>
+[ts-row]
+
+[testimonial slogan="What our clients say!"]
+
+[item author="Robert  Smith" post="Manager" image="http://localhost/view/wp-content/uploads/2013/04/slide-01.png" comment="Lorem ipsum dolor slo onsec nelioro tueraliquet Morbi nec In Curabitur lorem in design Morbi nec In Curabitur lreaoreet nisl lorem design desirus gamin nelliru dotacitus gojus. Vurabi. lreaoreet nisl lorem in design Morbi nec In. Gurabitur lreaoreet nisl lorem design desirus gamin tacitus gojus," ]
+
+[item author="Jeson Smith" post="Manager" image="http://localhost/view/wp-content/uploads/2013/04/slide-01.png" comment="Lorem ipsum dolor slo onsec nelioro tueraliquet Morbi nec In Curabitur lorem in design Morbi nec In Curabitur lreaoreet nisl lorem design desirus gamin nelliru dotacitus gojus. Vurabi. lreaoreet nisl lorem in design Morbi nec In. Gurabitur lreaoreet nisl lorem design desirus gamin tacitus gojus," ]
+
+[item author="Bub Smith" post="Manager" image="http://localhost/view/wp-content/uploads/2013/04/slide-01.png" comment="Lorem ipsum dolor slo onsec nelioro tueraliquet Morbi nec In Curabitur lorem in design Morbi nec In Curabitur lreaoreet nisl lorem design desirus gamin nelliru dotacitus gojus. Vurabi. lreaoreet nisl lorem in design Morbi nec In. Gurabitur lreaoreet nisl lorem design desirus gamin tacitus gojus," ]
+
+[/testimonial]
+
+[skills]
+
+[skill value="44"]Design Development[/skill]
+
+[skill value="54"]Web Development[/skill]
+
+[skill value="84"]Ilustartion Skills[/skill]
+
+[skill value="64"]Architecture[/skill]
+
+[/skills]
+
+[/ts-row]
+        </pre>
+    </div>
+
+
+</div>
+
+<div class="row">
+     <div class="span11"><h4>Newletter short-code</h4></div>
+    <div class="span12">
+        <div class="thumbnail"> 
+            <img alt="" src="assets/img/10_image.png">
+        </div>
+    </div>
+    <div class="span12">
+        <pre>
+
+[newsletter]
+
+        </pre>
+    </div>
+
+
+</div>
+                                </li>
+                                <li>A short title about this page or section</li>
+                                <li>Click Publish</li>                                                        
+                            </ol>                            
+                        </div>
+
+                    </div>                      
+                </section>
+            <!-- ========================= SECTION: About Page >> END ========================= -->
+  <hr />
+            <!-- ========================= SECTION: Portfolio Page >> START ========================= -->
+                <section id="portfolio">
+                    <div class="page-header">
+                        <h1>Portfolio Page</h1>
+                    </div>
+
+                    <div class="row">
+                        <div class="span12">
+                            <div class="thumbnail"> 
+                                <img alt="" src="assets/img/11_image.png">
+                            </div>
+                        </div>                       
+                        <div class="span12">
+                            <h3></h3>
+                            <ol>
+                                <li>Go To pages and click "Add New"e</li>
+                                <li>Give "Portfolio" As a page title</li>
+                                <li><h3>Put Short code for porfolio </h3>
+<div class="row">
+    <div class="span12">
+        <h4>section-info shortcode</h4>
+        <pre>
+[section-info]Lorem ipsum dolor slo onsec tueraliquet Morbi nec In Curabitur lreaoreet nisl lorem in
+
+pellente e vidicus pannel impirus sadintas[/section-info]
+
+        </pre>
+    </div>
+    <div class="span12">
+        <h4>portfolio slider shortcode</h4>
+        <pre>
+[slider]
+
+[slide image="http://localhost/view/wp-content/uploads/2013/04/slide-01.jpg" title="slide1"]
+
+[slide image="http://localhost/view/wp-content/uploads/2013/04/slide-02.jpg" title="slide2"]
+
+[slide image="http://localhost/view/wp-content/uploads/2013/04/slide-03.jpg" title="slide3"]
+
+[/slider]
+        </pre>
+    </div>
+    <div class="span12">
+        <h4>portfolio item shortcode</h4>
+        <pre>
+        [portfolio]
+        </pre>
+    </div>
+
+    <div class="span12">
+         <h4>Add porfolio item like this one</h4>                   
+                            <div class="thumbnail"> 
+                                <img alt="" src="assets/img/12_image.png">
+                            </div>
+    </div>
+</div>
+
+
+                                </li>
+
+                                <li>A short title about this page or section</li>
+                                <li>Click Publish</li>
+                                                             
+                            </ol>                            
+                        </div>
+
+                    </div>                      
+                </section>
+            <!-- ========================= SECTION: Portfolio Page >> END ========================= -->            
+         
+  <hr />
+            <!-- ========================= SECTION: Contact Page >> START ========================= -->
+                <section id="contact">
+                    <div class="page-header">
+                        <h1>Contact Page</h1>
+                    </div>
+
+                    <div class="row">
+                        <div class="span12">
+                            <div class="thumbnail"> 
+                                <img alt="" src="assets/img/13_image.png">
+                            </div>
+                        </div>                       
+                        <div class="span12">
+                            <h3></h3>
+                            <ol>
+                                <li>Go To pages and click "Add New"e</li>
+                                <li>Give "Contact" As a page title</li>
+                                <li><h3>Put Short code for Contact </h3>
+<div class="row">
+    <div class="span12">
+        <h4>section-info shortcode</h4>
+        <pre>
+[section-info]Lorem ipsum dolor slo onsec tueraliquet Morbi nec In Curabitur lreaoreet nisl lorem in
+
+pellente e vidicus pannel impirus sadintas[/section-info]
+
+        </pre>
+    </div>
+    <div class="span12">
+        <h4>For Contact From shortcode</h4>
+        <pre>
+[contact]
+        </pre>
+    </div>
+    <div class="span12">
+        <h4>For Contact Section Theme option settings</h4>
+                            <div class="thumbnail"> 
+                                <img alt="" src="assets/img/14_image.png">
+                            </div>
+    </div>
+</div>
+
+
+                                </li>
+
+                                <li>A short title about this page or section</li>
+                                <li>Click Publish</li>
+                                                             
+                            </ol>                            
+                        </div>
+
+                    </div>                      
+                </section>
+            <!-- ========================= SECTION: Contact Page >> END ========================= -->
+
+  <hr />
+
+            <!-- ========================= SECTION: Blog Page >> START ========================= -->
+                <section id="blog">
+                    <div class="page-header">
+                        <h1>Blog Page</h1>
+                    </div>
+
+                    <div class="row">
+                        <div class="span12">
+                            <div class="thumbnail"> 
+                                <img alt="" src="assets/img/15_image.png">
+                            </div>
+                        </div>                       
+                        <div class="span12">
+                            <h3></h3>
+                            <ol>
+                                <li>Go To pages and click "Add New"e</li>
+                                <li>Give "Blog" As a page title</li>
+                                <li>Leave blank </li>
+                                <li>A short title about this page or section</li>
+                                <li>Chosse "Blog Page Template" As a page template</li>
+                                <li>Click Publish</li>
+                                                             
+                            </ol>                            
+                        </div>                        
+                    </div> 
+
+                    <div class="row">
+                        <div class="span12"><h4>Blog Post Example</h4></div>
+                        
+                        <div class="span12">
+                            <h4> A Standard Post Example</h4>
+                            <div class="thumbnail"> 
+                                <img alt="" src="assets/img/16_image.png">
+                            </div>
+                        </div> 
+
+                        <div class="span12">
+                            <h4> A Gallery Post Example</h4>
+                            <div class="thumbnail"> 
+                                <img alt="" src="assets/img/17_image.png">
+                            </div>
+                        </div> 
+
+                        <div class="span12">
+                            <h4> A Video Post Example</h4>
+                            <div class="thumbnail"> 
+                                <img alt="" src="assets/img/18_image.png">
+                            </div>
+                        </div> 
+                    </div>                     
+                </section>
+            <!-- ========================= SECTION: Contact Page >> END ========================= -->
+<hr />
+
+
+          <!-- ========================= SECTION: Theme Option  >> START ========================= -->
+            <section id="toption-page">
+                <div class="page-header">
+                    <h1>Theme Option <small>Simple & easy to modify</small></h1>
+                </div>
+            
+                <div class="row">
+                    <div class="span12">
+                        <h3>The Theme Options</h3>
+                        <p> <b>"Appearance" => "Nature Options"</b> from your WP dashboard.
+                        </p>
+                    </div>
+                    <div class="span12">
+                        <div class="thumbnail"> <img alt="" src="assets/img/19_image.jpg">
+                            <div class="thumb-info">
+                                <h5>General Settings</h5>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="span12">
+                        <div class="thumbnail"> <img alt="" src="assets/img/20_image.jpg">
+                            <div class="thumb-info">
+                                <h5>Navigation</h5>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="span12">
+                        <div class="thumbnail"> <img alt="" src="assets/img/21_image.jpg">
+                            <div class="thumb-info">
+                                <h5>Integration</h5>
+                            </div>
+                        </div>                        
+                    </div>       
+                     <div class="span12">
+                        <div class="thumbnail"> <img alt="" src="assets/img/22_image.jpg">
+                            <div class="thumb-info">
+                                <h5>Colorization & Fonts</h5>
+                            </div>
+                        </div>                        
+                    </div>                                  
+                </div>
+
+    
+            </section>
+            <!-- ========================= SECTION: Theme Option >> END ========================= -->
+
+
+<hr />
+
+        <!-- ========================= SECTION: Demo-Data  >> START ========================= -->
+                <section id="demo-data">
+                    <div class="page-header">
+                        <h1>Demo-Data<small>How to Import Our Demo-Data</small></h1>
+                    </div>
+                
+                    <div class="row">
+                        <div class="span12">
+                            <h3>Importing Live Preview Files</h3>
+                            <p>I have created a folder labeled "Live Preview XML" which contains an export for the Live Preview. The place to upload this XML file is in WordPress under Tools &gt; Import.</p>
+                            
+                            <p>Once you've arrived on the Import page, you will click on the "WordPress" link: Wordpress - Install the WordPress importer to import posts, pages, comments, custom fields, categories, and tags from a WordPress export file.</p>
+                            
+                            <p>The first time you do this you will get a pop-up prompting you to install the "WordPress Importer". You will need to click "Install Now". Then You will have installed the plugin and need to click "Activate Plugin &amp; Run Importer".</p>
+                            
+                            <p>From here you will just need click "Choose File" and select the xxxxxx.xml file. Then click "Upload file and import".</p>
+                            
+                            <p>You will then be prompted to Assign Authors. You can read the description at the top as this explains everything. Note: Make sure you Import Attachments.</p>
+                            
+                            <p>Check the box "Download and import file attachments". This will download attachments for images included in the Live Preview demo.</p>
+                            
+                           <p>You now just need to wait for the importer to finish. This might take a few minutes depending on your hosting server speed.</p>
+                        </div>
+                                     
+                    </div>
+
+        
+                </section>
+                <!-- ========================= SECTION: Demo-Data >> END ========================= -->
+
+            <hr />
+    
+            <div class="goodbye">
+                <p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+            </div>
+        
+            <hr />
+        
+            <footer>
+                <p>&copy; Company 2012</p>
+            </footer>
+            
+        </div>
+        <!-- ========================= MAIN CONTAINER >> END ========================= -->
+         
+        
+        <!-- CHANGELOG >> START -->
+        <div class="modal hide fade" id="changelog" tabindex="-1" role="dialog" aria-labelledby="changelog-label" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="changelog-label">Changelog</h3>
+            </div>
+            <div class="modal-body">
+            
+<!-- Code Block >> Start -->                   
+<pre>Legend:
++   Addition
+^   Change
+-   Removed
+*   Security Fix
+#   Bug Fix
+!   Note</pre>
+<!-- Code Block >> End --> 
+                  
+<!-- Code Block >> Start -->                   
+<pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+<!-- Code Block >> End -->                   
+
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            </div>
+        </div>
+        <!-- CHANGELOG >> END -->
+        
+        
+        
+        <!-- CREDITS >> START -->
+        <div class="modal hide fade" id="credits" tabindex="-1" role="dialog" aria-labelledby="credits-label" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="credits-label">Credits</h3>
+            </div>
+            <div class="modal-body">
+                <p>I've used the following images, icons or other files as listed.</p>
+                <h3>JavaScript</h3>
+                <ol>
+                    <li><a href="#">jQuery</a> <small>&mdash; Nullam quis risus eget urna mollis ornare vel eu leo. </small></li>
+                    <li><a href="#">jCarousel</a> <small>&mdash; Nullam quis risus eget urna mollis ornare vel eu leo. </small></li>
+                    <li><a href="#">CodeCanyon</a> <small>&mdash; Nullam quis risus eget urna mollis ornare vel eu leo. </small></li>
+                </ol>
+                <h3>CSS</h3>
+                <ol>
+                    <li><a href="#">960.gs</a> <small>&mdash; Nullam quis risus eget urna mollis ornare vel eu leo.</small> </li>
+                </ol>
+                <h3>Images</h3>
+                <ol>
+                    <li><a href="#">PhotoDune</a> <small>&mdash; Nullam quis risus eget urna mollis ornare vel eu leo. </small></li>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            </div>
+        </div>
+        <!-- CREDITS >> END -->
+
+        <!-- loading javascripts -->
+		<script src="assets/js/jquery.js"></script> 
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/google-code-prettify/prettify.js"></script>
+        
+        <!-- init javascripts -->
+        <script src="assets/js/init.js"></script>
+         
+    </body>
+    
+</html>
