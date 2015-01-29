@@ -71,6 +71,7 @@ mysql -u root -p1234 -e "create database wordpress;"
 echo -e "${COLOR}---allow overrides for .htaccess---${COLOR_RST}"
 sudo sed -i 's_www/html_www_' /etc/apache2/sites-available/default
 sudo sed -i 's_</VirtualHost>_Include /vagrant/scripts/allow-override.conf\n</VirtualHost>_' /etc/apache2/sites-available/default
+sudo sed -i 's_www-data_vagrant_' /etc/apache2/envvars
 a2dissite default && a2ensite default
 
 
@@ -87,8 +88,5 @@ fi
 
 # restart apache2
 echo -e "${COLOR}---restarting apache2---${COLOR_RST}"
+sudo chown vagrant:vagrant /var/lock/apache2
 service apache2 restart
-
-curl -O --silent https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar >> /dev/null
-chmod ugo+x wp-cli.phar
-sudo mv wp-cli.phar /usr/local/bin/wp
