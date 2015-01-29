@@ -388,8 +388,18 @@ add_shortcode('h6', 'h6_f');
 	function mt_news_letter($atts=array()) {
 		require (get_template_directory() . '/functions/m-newsletter.php');
 	}
-
-
+	
+//parallax-section
+add_shortcode('parallax', 'mt_parallax');
+function mt_parallax($atts=array()) {
+	ob_start();
+	mt_parallax_content($atts);
+	$content = ob_get_clean();
+	return $content;
+}
+function mt_parallax_content($atts=array()) {
+	require (get_template_directory() . '/functions/m-parallax.php');
+}
 
 //Slider ShortCode
 	function m_flex_slider($atts, $content = null) {
