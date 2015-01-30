@@ -130,6 +130,8 @@ add_shortcode('h6', 'h6_f');
 	}
 	add_shortcode('service', 'm_service');
 
+
+
 //OTHER SERVICE-ROW 
 
 	function m_o_service_row($atts, $content = null) {
@@ -388,7 +390,7 @@ add_shortcode('h6', 'h6_f');
 	function mt_news_letter($atts=array()) {
 		require (get_template_directory() . '/functions/m-newsletter.php');
 	}
-	
+
 //parallax-section
 add_shortcode('parallax', 'mt_parallax');
 function mt_parallax($atts=array()) {
