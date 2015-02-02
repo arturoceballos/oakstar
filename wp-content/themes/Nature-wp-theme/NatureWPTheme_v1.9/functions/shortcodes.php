@@ -98,9 +98,9 @@ add_shortcode('h6', 'h6_f');
 	extract( shortcode_atts( array(), $atts));
 	
 	$code = '
-	<div class="container">
+	
 		<div class="row service-row">'.do_shortcode($content).'</div>
-	</div>
+	
 	';
 	return $code;
 	}
