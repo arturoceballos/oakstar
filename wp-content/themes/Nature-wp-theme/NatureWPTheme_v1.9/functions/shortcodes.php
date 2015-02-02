@@ -403,6 +403,39 @@ function mt_parallax_content($atts=array()) {
 	require (get_template_directory() . '/functions/m-parallax.php');
 }
 
+//youtube-section
+add_shortcode('youtube', 'mt_youtube');
+function mt_youtube($atts=array()) {
+	ob_start();
+	mt_youtube_content($atts);
+	$content = ob_get_clean();
+	return $content;
+}
+function mt_youtube_content($atts=array()) {
+	require (get_template_directory() . '/functions/m-youtube.php');
+}
+
+//video-embed
+// add_shortcode('video_embed', 'mt_video_embed');
+// function mt_video_embed($atts) {
+// 	array(
+// 		'src' => '',
+// 		'title' => '',
+// 		'description' => ''
+// 		);
+// 	return '
+// 		<div class="container-fluid">
+//             <div class="row-fluid">
+//                 <div class="span12">
+//                 	<h3> . . <h3>
+// 					<iframe width="560" height="315" src="https://www.youtube.com/embed/msFmkKXmlmM" frameborder="0" allowfullscreen></iframe>
+// 					<h5> . . <h5>
+// 				</div>
+// 			</div>
+// 		</div>';
+// }
+
+
 //Slider ShortCode
 	function m_flex_slider($atts, $content = null) {
 	extract( shortcode_atts( array(), $atts));

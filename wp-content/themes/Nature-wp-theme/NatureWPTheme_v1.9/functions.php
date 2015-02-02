@@ -159,6 +159,21 @@ if(! function_exists('nature_customization'))
 	}
 }
 
+// function create_post_type () {
+// 	register_post_type ('youtube_videos',
+// 			array('labels' => 
+// 				array(
+// 				'name' => __('Games'),
+// 				'singular_name' => __('Games')
+// 				),
+// 				'public' => true,
+// 				'menu_position' => 10,
+// 				'rewrite' => array('slug' => 'videos')
+// 			)
+// 		);
+// }
+// add_action ('init', 'create_post_type')
+
 
 
 /**
@@ -248,5 +263,37 @@ function gg_register_required_plugins()
         )
     );
     tgmpa($plugins, $config);
+}
+
+function get_oak_star_videos() {
+
+    //Query for products drop down
+    $type = 'video';
+    $args = array(
+        'post_type'        => $type,
+        'post_status'      => 'publish',
+        'order'            => 'ASC',
+        'orderby'          => 'title',
+        'posts_per_page'   => - 1
+    );
+
+    $my_query = new WP_Query($args);
+    $videos = array();
+    
+    if ($my_query->have_posts()) {
+        while ($my_query->have_posts())  {
+            $my_query->the_post();
+            
+            $videos[] = array(
+                'title' => get_the_title(),
+                'desc' => get_the_content(),
+                'link' => types_render_field('youtube-videos', array('output' => 'raw'))
+            );
+        }    
+    }
+
+    wp_reset_postdata();
+
+    return $videos;
 }
 ?>
