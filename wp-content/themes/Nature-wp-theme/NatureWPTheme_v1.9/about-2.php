@@ -12,6 +12,8 @@
                     </div>
                 </div>
             </div>
-			<h5><?php global $more; $more = 0; the_content('');?></h5>
+            <div class="col-md-8 col-md-offset-2" style="text-align:center;">
+                <h5><?php global $more; $more = 0; the_content('');?></h5>
+            </div>
         </div><!-- end of container --> 
 </section><!-- end of sections -->
