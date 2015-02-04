@@ -28,13 +28,26 @@
             $my_query = new WP_Query($args);
 
             if ($my_query->have_posts()): while($my_query->have_posts()): $my_query->the_post();
+            ?>
+                
+                <?php
+                $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );
                 ?>
-                <div class="event" style="clear: both; overflow:hidden;">
-                    <?php the_post_thumbnail('small', array('style' => 'float: left; margin-right: 20px;')); ?>
-                    <h2><?php the_title(); ?></h2>
-                    <h2><?php the_content(); ?></h2>
-                    <?php echo types_render_field('event', array('output' => 'raw')); ?>
+
+                <div class="row vertical-align">
+                    <div class="col-md-5">
+                        <div class="event" style="background: url('<?php echo $src[0]; ?>') no-repeat;">
+                            <h2><?php the_title(); ?></h2>
+                            <!-- <h3><?php the_content(); ?></h3> -->
+                            <?php echo types_render_field('events', array('output' => 'raw')); ?>
+                            <?php echo date('D. F jS, Y', types_render_field('event-date', array('output' => 'raw'))); ?>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3><?php the_content(); ?></h3>
+                    </div>
                 </div>
+               
 
             <?php endwhile; endif; wp_reset_postdata(); ?>
         </div>
