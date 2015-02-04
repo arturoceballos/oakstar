@@ -1029,7 +1029,7 @@ ul.social > li a.dribbble:hover {
 	padding:130px 0 55px;
 }
 .contact-row {
-	padding:0 122px;
+	padding:130px 122px;
 }
 .contact .section-title h2 span {
 	color:#fff;
@@ -1053,7 +1053,7 @@ ul.social > li a.dribbble:hover {
 }
 .send-message-form-box h3,
 .contact-info-box h3 {
-	color:#fff;
+	color: hsl(0, 0%, 15%);
 	margin:0;
 	padding-bottom:35px;
 }
