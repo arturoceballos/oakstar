@@ -11,7 +11,7 @@
         <!--End Section Title-->
 
         <!--Content-->
-        <div class="col-md-12">
+        <div id="container" class="services-section"  data-masonry-options='{ "columnWidth": 20, "itemSelector": ".event" }'>
             <?php
 
             //get the event custom post types
@@ -19,38 +19,45 @@
             $args = array(
                 'post_type'        => $type,
                 'post_status'      => 'publish',
-                'order'            => 'ASC',
+                'order'            => 'date',
+                'date'             => 'date',
                 'orderby'          => 'title',
-                'posts_per_page'   => -1
+                'posts_per_page'   => -1,
+                "title" => 'SERVICE TITLE',
+                "text" => 'SERVICE DETAILS',
+                "image" => 'SERVICE IMAGE',
+                "url" => 'SERVICE BUTTON URL',
             );
 
             $my_query = null;
             $my_query = new WP_Query($args);
+?>
+            <?php if ($my_query->have_posts()): while($my_query->have_posts()): $my_query->the_post();?>
 
-            if ($my_query->have_posts()): while($my_query->have_posts()): $my_query->the_post();
-            ?>
-                
                 <?php
                 $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );
                 ?>
+                        <div class="wow animated bounceInUp event pull-left">
 
-                <div class="row vertical-align">
-                    <div class="col-md-5">
-                        <div class="event" style="background: url('<?php echo $src[0]; ?>') no-repeat;">
-                            <h2><?php the_title(); ?></h2>
-                            <!-- <h3><?php the_content(); ?></h3> -->
-                            <?php echo types_render_field('events', array('output' => 'raw')); ?>
-                            <?php echo date('D. F jS, Y', types_render_field('event-date', array('output' => 'raw'))); ?>
+
+
+                            <div class="col-sm-12 col-md-4 col-lg-3 service-span">
+                                <div class="service-box">
+                                    <img class="img-circle" src="<?php echo $src[0]; ?>" alt="'.$title.'">
+                                    <h2><?php the_title(); ?></h2>
+                                    <p><?php the_content();?></p>
+
+                                </div>
+                            </div>
+
+                            <?php echo types_render_field('event-date', array('output' => 'raw'));?>
+                                        
+
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <h3><?php the_content(); ?></h3>
-                    </div>
-                </div>
-               
-
+                
             <?php endwhile; endif; wp_reset_postdata(); ?>
         </div>
         <!--End Content-->
     </div>
 </div>
+```
