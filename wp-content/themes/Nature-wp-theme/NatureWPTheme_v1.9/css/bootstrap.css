@@ -1588,6 +1588,13 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+.container-fluid-2 {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 70%;
+}
 .row {
   margin-right: -15px;
   margin-left: -15px;
@@ -6572,15 +6579,20 @@ button.close {
 
   display: flex;
   align-items: center;
+  margin-bottom: 40px;
 }
 .event {
-  padding:50px;
-  margin-left:0px;
-  margin-top:24px;
+  height: 260px;
+}
+.event h2 {
+  color: hsl(42, 4%, 100%);
+  text-align: center;
+  font-family: 'Lora', serif;
+  font-weight: 700;
 }
 
 .event:nth-child(2n) {
-  margin-left: 100px;
+ /* margin-left: 100px;*/
 }
 
 .row {
@@ -6592,6 +6604,10 @@ button.close {
 .row:nth-child(2n) {
   display: flex;
   flex-direction: row-reverse;
+}
+
+.col-md-5 {
+  text-align: justify;
 }
 
 /*Associated Media*/
@@ -6610,6 +6626,15 @@ button.close {
 }
 */
 
+/*Center Div Within Parent*/
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Center Content within .center-block div*/
 
 
 
