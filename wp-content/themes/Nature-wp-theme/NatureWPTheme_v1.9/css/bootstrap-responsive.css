@@ -193,7 +193,7 @@
     margin-left: 130px;
   }
   .row-fluid {
-    width: 70%;
+    width: 100%;
     *zoom: 1;
   }
   .row-fluid:before,
@@ -217,7 +217,7 @@
             box-sizing: border-box;
   }
   .row-fluid [class*="span"]:first-child {
-    margin-left: 186px;
+    margin-left: 0px;
   }
   .row-fluid .controls-row [class*="span"] + [class*="span"] {
     margin-left: 2.564102564102564%;
