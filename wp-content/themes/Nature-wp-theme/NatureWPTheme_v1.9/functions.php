@@ -265,35 +265,14 @@ function gg_register_required_plugins()
     tgmpa($plugins, $config);
 }
 
-function get_oak_star_videos() {
+// Google Fonts//
+//H1 Tags//
 
-    //Query for products drop down
-    $type = 'video';
-    $args = array(
-        'post_type'        => $type,
-        'post_status'      => 'publish',
-        'order'            => 'ASC',
-        'orderby'          => 'title',
-        'posts_per_page'   => - 1
-    );
-
-    $my_query = new WP_Query($args);
-    $videos = array();
-    
-    if ($my_query->have_posts()) {
-        while ($my_query->have_posts())  {
-            $my_query->the_post();
-            
-            $videos[] = array(
-                'title' => get_the_title(),
-                'desc' => get_the_content(),
-                'link' => types_render_field('youtube-videos', array('output' => 'raw'))
-            );
-        }    
-    }
-
-    wp_reset_postdata();
-
-    return $videos;
+function load_fonts() {
+	wp_register_style('et-googleFonts', 'http://fonts.googleapis.com/css?family=Rye');
+	wp_register_style('et-googleFonts', 'http://fonts.googleapis.com/css?family=Lora:400,700');
+	wp_enqueue_style('et-googleFonts');
 }
+add_action('wp_print_styles', 'load_fonts')
+
 ?>
