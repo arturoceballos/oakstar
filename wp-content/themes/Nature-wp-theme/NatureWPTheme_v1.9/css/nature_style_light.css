@@ -3,14 +3,14 @@
 body {
 	font-size:12px;
 	color:#8a8a8a;
-	font-family:'OpenSansRegular', Arial, sans-serif;
+	font-family: 'Lora', serif;
 	line-height:18px;
 	background:#fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight:normal;
-	font-family:'BebasRegular', Arial, sans-serif;
+	/*font-family: 'Rye', cursive;*/
 	text-rendering: optimizeSpeed;
 }
 h1 {
@@ -20,13 +20,16 @@ h1 {
 	word-spacing:10px;
 }
 h2 {
-    color: #000;
+	font-family: 'Rye', cursive;
+    color: hsla(42, 4%, 47%, 1);
     font-size: 44px;
 	line-height:56px;
 	word-spacing:8px;
 }
 h3 {
-    color: #2e2e2e;
+	font-family: 'Lora', serif;
+	font-weight: 700;
+    color: hsla(21, 28%, 50%, 1);
     font-size: 20px;
 	line-height:24px;
 	word-spacing:3px;
@@ -254,7 +257,8 @@ ul.social > li a.dribbble:hover {
 }
 #homeCarousel .carousel-caption h1 {
 	margin: 0;
-	font-family:'AngillaTattooPersonalUse', Arial, sans-serif;
+	font-family: 'Rye', cursive;
+	color: hsla(42, 4%, 47%, 1);
 	text-transform:none;
 	padding-bottom:12px;
 	background:url(../img/carousel-caption.png) no-repeat 50% 70%;
@@ -271,7 +275,7 @@ ul.social > li a.dribbble:hover {
 	line-height: 60px;
 	font-size:44px;
 	color: #fced00;
-	font-family:'BebasRegular', Arial, sans-serif;
+	font-family: 'Lora', serif;
 }
 
 /* Navigation
@@ -321,7 +325,7 @@ ul.social > li a.dribbble:hover {
 	text-shadow:none;
 	font-size:18px;
 	line-height:86px;
-	font-family:'BebasRegular', Arial, sans-serif;
+	font-family: 'Lora', serif;
 	-webkit-transition: background 1s;
 	-moz-transition: background 1s;
 	-o-transition: background 1s;
@@ -392,7 +396,7 @@ ul.social > li a.dribbble:hover {
 	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 1px rgba(0, 0, 0, 0.3);
 	font-size:12px;
 	line-height:35px;
-	font-family:'BebasRegular', Arial, sans-serif;
+	font-family: 'Lora', serif;
 	word-spacing:3px;
 	-webkit-transition: background 1s;
 	-moz-transition: background 1s;
@@ -694,7 +698,7 @@ ul.social > li a.dribbble:hover {
 	margin:0;
 	font-size:19px;
 	line-height:24px;
-	font-family:'BebasRegular', Arial, sans-serif;
+	font-family: 'Lora', serif;
 	color:#fced00;
 	word-spacing:2px;
 	padding-bottom:5px;
@@ -725,7 +729,7 @@ ul.social > li a.dribbble:hover {
 .newsletter-form-box input {
 	color: #969696;
 	font-size:14px;
-	font-family:'OpenSansRegular', Arial, sans-serif;
+	font-family: 'Lora', serif;
 	background:#f9f9f9 url(../img/newsletter-input.png) no-repeat 10px center;
 	border:1px solid #8fd247; 
 	height:24px;
@@ -751,7 +755,7 @@ ul.social > li a.dribbble:hover {
     padding: 0 10px;
 	font-size:12px;
 	line-height:35px;
-	font-family:'BebasRegular', Arial, sans-serif;
+	font-family: 'Lora', serif;
 	word-spacing:3px;
 	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0px 3px 3px rgba(0, 0, 0, 0.2);
 	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0px 3px 3px rgba(0, 0, 0, 0.2);
@@ -774,19 +778,19 @@ ul.social > li a.dribbble:hover {
 .newsletter-form-box ::-webkit-input-placeholder {
 	color:#969696 !important; 
 	font-size:14px;
-	font-family:'OpenSansRegular', Arial, sans-serif;
+	font-family: 'Lora', serif;
 }
 /* mozilla */
 .newsletter-form-box input:-moz-placeholder {
 	color:#969696 !important; 
 	font-size:14px;
-	font-family:'OpenSansRegular', Arial, sans-serif;
+	font-family: 'Lora', serif;
 }
 /* ie (faux placeholder) */
 .newsletter-form-box input.placeholder-text {
 	color:#969696 !important; 
 	font-size:14px;
-	font-family:'OpenSansRegular', Arial, sans-serif;
+	font-family: 'Lora', serif;
 }
 
 
@@ -904,7 +908,7 @@ ul.social > li a.dribbble:hover {
     font-size: 18px;
     padding: 0 12px;
     text-decoration: none;
-	font-family:'BebasRegular', Arial, sans-serif;
+	font-family: 'Lora', serif;
 	-webkit-transition: background 1s;
 	-moz-transition: background 1s;
 	-o-transition: background 1s;
@@ -1078,7 +1082,7 @@ ul.social > li a.dribbble:hover {
 .send-message-form textarea {
 	color: #ffffff;
 	font-size:12px;
-	font-family:'OpenSansRegular', Arial, sans-serif;
+	font-family: 'Lora', serif;
 	background:#4d8314 ;
 	border:1px solid #8fd247; 
 	-webkit-border-radius: 0;
@@ -1144,21 +1148,21 @@ ul.social > li a.dribbble:hover {
 .send-message-form ::-webkit-input-placeholder {
 	color:#fff !important; 
 	font-size:11px;
-	font-family:'OpenSansRegular', Arial, sans-serif;
+	font-family: 'Lora', serif;
 }
 /* mozilla */
 .send-message-form input:-moz-placeholder, 
 .send-message-form textarea:-moz-placeholder {
 	color:#fff !important; 
 	font-size:11px;
-	font-family:'OpenSansRegular', Arial, sans-serif;
+	font-family: 'Lora', serif;
 }
 /* ie (faux placeholder) */
 .send-message-form input.placeholder-text, 
 .send-message-form textarea.placeholder-text {
 	color:#fff !important; 
 	font-size:11px;
-	font-family:'OpenSansRegular', Arial, sans-serif;
+	font-family: 'Lora', serif;
 }
 
 .contact-info-span {
@@ -1227,7 +1231,7 @@ ul.social > li a.dribbble:hover {
 	opacity:.9;
 }
 .footer p {
-	font-family:'BebasRegular', Arial, sans-serif;
+	font-family: 'Lora', serif;
 	font-size:18px;
 	color:#333;
 	line-height:22px;
