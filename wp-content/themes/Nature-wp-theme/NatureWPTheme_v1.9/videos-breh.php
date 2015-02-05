@@ -47,8 +47,8 @@ global $nature_mt; ?>
                                         <!-- <div class="row vertical-align">
                                             <div class="col-md-5"> -->
                                                 <div class="event" style="background: url('<?php echo $src[0]; ?>') no-repeat;">
-                                                    <h2><?php the_title(); ?></h2>
-                                                    <h3><?php the_content(); ?></h3>
+                                                    <h3><?php the_title(); ?></h3>
+                                                    <p><?php the_content(); ?></p>
                                                     <?php echo types_render_field('youtube-videos', array('output' => 'raw')); ?>
                                                     <iframe width="560" height="315" src="<?php echo types_render_field('youtube-videos', array('output' => 'raw')); ?>" frameborder="0" allowfullscreen></iframe>
                                                     <iframe width="300" height="200" src="https://www.youtube.com/embed/msFmkKXmlmM" frameborder="0" allowfullscreen></iframe>
