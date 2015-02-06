@@ -1,5 +1,5 @@
 <div class="row <?php echo $post->post_name;?>" id="<?php echo $post->post_name;?>">
-    <div class="container-fluid">
+    <div class="container-fluid-service">
         <!-- Section Title -->
         <div class="section-title">
             <h2>
@@ -36,11 +36,11 @@
 
                 <div class="row vertical-align">
                     <div class="col-md-4">
-                        <div class="event" style="background: url('<?php echo $src[0]; ?>') no-repeat;">
+                        <div class="services" style="background: url('<?php echo $src[0]; ?>') no-repeat;">
                             <h2><?php the_title(); ?></h2>
                             <!-- <h3><?php the_content(); ?></h3> -->
                             <?php echo types_render_field('service-1', array('output' => 'raw')); ?>
-                            <h2><?php echo date('D. F jS, Y', types_render_field('event-date', array('output' => 'raw'))); ?></h2>
+                            <!-- <h2><?php echo date('D. F jS, Y', types_render_field('event-date', array('output' => 'raw'))); ?></h2> -->
                         </div>
                     </div>
                     <div class="col-md-5">
