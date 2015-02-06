@@ -1595,6 +1595,13 @@ pre code {
   margin-left: auto;
   max-width: 70%;
 }
+.container-fluid-service {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+}
 .row {
   margin-right: -15px;
   margin-left: -15px;
@@ -6571,7 +6578,14 @@ button.close {
   }
 }
 
-/*Event Section*/
+/*About Section*/
+
+
+/*Service Section*/
+
+.services {
+  box-shadow: 10px 10px 5px hsla(44, 4%, 50%, 1);
+}
 
 .vertical-align {
   /*min-height: 100%;
@@ -6580,46 +6594,70 @@ button.close {
   display: flex;
   align-items: center;
   margin-bottom: 40px;
+  flex-direction: row;
+  justify-content: center;
 }
-.event {
+
+.vertical-align:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+/*.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}*/
+
+/*.row:nth-child(2n) {
+  display: flex;
+  flex-direction: row-reverse;
+}*/
+
+.section-title h2 span {
+  color: hsl(42, 4%, 50%);
+  font-family: 'Rye', cursive;
+}
+
+.services {
   height: 260px;
 }
-.event h2 {
+
+.services h2 {
   color: hsl(42, 4%, 100%);
   text-align: center;
   font-family: 'Lora', serif;
   font-weight: 700;
 }
 
-.event:nth-child(2n) {
- /* margin-left: 100px;*/
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.row:nth-child(2n) {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.col-md-5 {
+.col-md-5 h5{
   text-align: justify;
 }
 
+/*Facility Section*/
+
+
+/*Event Section*/
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*.col-md-5 {
+  text-align: justify;
+}*/
+
 /*Associated Media*/
 
-.row .w2 {
+/*.row .w2 {
   width: 400px;
   height: 300px;
-/*  padding:50px;*/
+  padding:50px;
   box-shadow:5px 5px 50px #333;
   margin:0;
 }
-
+*/
 /*.row .w2 p {
     font-size: 30px;
     font-size: 3.5vw;
@@ -6628,13 +6666,16 @@ button.close {
 
 /*Center Div Within Parent*/
 
-.center-block {
+/*.center-block {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
+}*/
 
 /*Center Content within .center-block div*/
+
+/*Contact Section*/
+
 
 
 
