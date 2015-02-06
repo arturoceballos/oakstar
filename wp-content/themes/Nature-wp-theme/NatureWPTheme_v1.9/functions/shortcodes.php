@@ -595,6 +595,25 @@ function mt_contact_show($atts=array()) {
 	require (get_template_directory() . '/functions/m-contact.php');
 }
 
+// function highgrove_reel( $atts, $content = null ) {
+
+//    $reel = shortcode_atts( array(
+//        'id' => null,
+//        'order' => 'desc',
+//        'limit' => 12
+//    ), highgrove_normalize_atts( $atts ) );
+
+//    $args['meta_query'] = array( array( 'key' => '_thumbnail_id' ) );
+//    $args['order'] = strtoupper( $reel['order'] );
+//    $args['posts_per_page'] = $reel['limit'];
+
+//    ob_start();
+//    include( locate_template( 'functions/reel.php' ) );
+//    $output = ob_get_clean();
+
+//    return $output;
+// }
+// add_shortcode( 'reel', 'highgrove_reel' );
 
 
 
