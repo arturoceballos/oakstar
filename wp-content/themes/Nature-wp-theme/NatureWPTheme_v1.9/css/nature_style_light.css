@@ -288,7 +288,7 @@ ul.social > li a.dribbble:hover {
 	z-index: 12;
 	background:url(../img/navbar-top-border.png) repeat-x left top;
 	padding-top:2px;
-	border-bottom:9px solid #85c63e;
+	border-bottom:9px solid hsla(44, 4%, 50%, 1);
 }
 
 .navbar,
@@ -349,15 +349,15 @@ ul.social > li a.dribbble:hover {
 
 /* Main Content
 -------------------------------------------------- */
-#main-content {
+/*#main-content {
    background:url(../img/section-arrow.png) no-repeat top center;
 }
-
+*/
 
 /* Service
 -------------------------------------------------- */
 .service {
-	padding:130px 0 0px 0;
+	/*padding:130px 0 0px 0;*/
 }
 .service-row {
 	padding:0 120px;
@@ -1481,14 +1481,14 @@ div.comments-list:nth-child(even) {
 		display:none;
 	}
 	.navbar .is-sticky .main-nav {
-		background:url(../img/section-arrow.png) no-repeat bottom center;
+/*		background:url(../img/section-arrow.png) no-repeat bottom center;*/
 		padding-bottom:99px;
 		width:100%;
 	}
 	.navbar .is-sticky ul.nav {
 		background:url(../img/nav-affix-bg.jpg) repeat top center;
 		background-size: cover !important;
-		border-bottom:9px solid #85c63e;
+		border-bottom:9px solid hsla(44, 4%, 50%, 1);
 		width:100%;
 	}
 
@@ -1500,14 +1500,14 @@ div.comments-list:nth-child(even) {
 		display:none;
 	}
 	.navbar .is-sticky .main-nav {
-		background:url(../img/section-arrow.png) no-repeat bottom center;
-		padding-bottom:99px;
+/*		background:url(../img/section-arrow.png) no-repeat bottom center;
+*/		padding-bottom:99px;
 		width:100%;
 	}
 	.navbar .is-sticky ul.nav {
 		background:url(../img/nav-affix-bg.jpg) repeat top center;
 		background-size: cover !important;
-		border-bottom:9px solid #85c63e;
+		border-bottom:9px solid hsla(44, 4%, 50%, 1);
 		width:100%;
 	}	
 
@@ -1525,14 +1525,14 @@ div.comments-list:nth-child(even) {
 		display:none;
 	}
 	.navbar .is-sticky .main-nav {
-		background:url(../img/section-arrow.png) no-repeat bottom center;
-		padding-bottom:99px;
+/*		background:url(../img/section-arrow.png) no-repeat bottom center;
+*/		padding-bottom:99px;
 		width:100%;
 	}
 	.navbar .is-sticky ul.nav {
 		background:url(../img/nav-affix-bg.jpg) repeat top center;
 		background-size: cover !important;
-		border-bottom:9px solid #85c63e;
+		border-bottom:9px solid hsla(44, 4%, 50%, 1);
 		width:100%;
 	}	
 	
@@ -1548,14 +1548,14 @@ div.comments-list:nth-child(even) {
 		display:none;
 	}
 	.navbar .is-sticky .main-nav {
-		background:url(../img/section-arrow.png) no-repeat bottom center;
-		padding-bottom:99px;
+/*		background:url(../img/section-arrow.png) no-repeat bottom center;
+*/		padding-bottom:99px;
 		width:100%;
 	}
 	.navbar .is-sticky ul.nav {
 		background:url(../img/nav-affix-bg.jpg) repeat top center;
 		background-size: cover !important;
-		border-bottom:9px solid #85c63e;
+		border-bottom:9px solid hsla(44, 4%, 50%, 1);
 		width:100%;
 	}
 
@@ -1593,14 +1593,14 @@ div.comments-list:nth-child(even) {
 		display:none;
 	}
 	.navbar .is-sticky .main-nav {
-		background:url(../img/section-arrow.png) no-repeat bottom center;
-		padding-bottom:99px;
+/*		background:url(../img/section-arrow.png) no-repeat bottom center;
+*/		padding-bottom:99px;
 		width:100%;
 	}
 	.navbar .is-sticky ul.nav {
 		background:url(../img/nav-affix-bg.jpg) repeat top center;
 		background-size: cover !important;
-		border-bottom:9px solid #85c63e;
+		border-bottom:9px solid hsla(44, 4%, 50%, 1);
 		width:100%;
 	}
 
@@ -1716,14 +1716,14 @@ div.comments-list:nth-child(even) {
 		display:none;
 	}
 	.navbar .is-sticky .main-nav {
-		background:url(../img/section-arrow.png) no-repeat bottom center;
-		padding-bottom:99px;
+/*		background:url(../img/section-arrow.png) no-repeat bottom center;
+*/		padding-bottom:99px;
 		width:100%;
 	}
 	.navbar .is-sticky ul.nav {
 		background:url(../img/nav-affix-bg.jpg) repeat top center;
 		background-size: cover !important;
-		border-bottom:9px solid #85c63e;
+		border-bottom:9px solid hsla(44, 4%, 50%, 1);
 		width:100%;
 	}
 	.newsletter{
