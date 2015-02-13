@@ -24,11 +24,11 @@ get_header(); ?>
     while(have_posts() ) : the_post(); ?>
     <style>
         .<?php echo $post->post_name;?>{
-            padding:130px 0 0px 0;
+            padding:130px 0 30px 0;
         }
     </style>
-    <p><?php echo $post->post_name?></p>
-    <?php get_template_part($post->post_name)?>
+    <!-- <p><?php echo $post->post_name?></p>
+ -->    <?php get_template_part($post->post_name)?>
 
     <?php endwhile; wp_reset_query(); ?>
 

@@ -6,7 +6,7 @@
         <div class="container-fluid">
             <div class="row-fluid">
                 <div class="span12 footer-span">
-                    <div class="scroll-top"><a href="#"></a></div>
+                    <div class="scroll-top"><a href="#" class="fa fa-arrow-up fa-5x"></a></div>
                     <?php if(isset($nature_mt['footer_text']) && $nature_mt['footer_text'] != '') { ?>
                     <p>&copy;<?php echo $nature_mt['footer_text'];?></p>
                     <?php } ?> 
