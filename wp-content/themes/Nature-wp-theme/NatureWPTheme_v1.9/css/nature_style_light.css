@@ -35,9 +35,12 @@ h3 {
 	word-spacing:3px;
 }
 h4 {
-	color:#2e2e2e;
-	font-size:18px;
-	line-height:22px;
+	font-family: 'Lora', serif;
+	color: hsla(21, 28%, 50%, 1);
+	/*color: hsla(42, 4%, 47%, 1);*/
+	/*color:#2e2e2e;*/
+	font-size: 30px;
+	line-height:30px;
 	word-spacing:5px;
 }
 h5 {
@@ -202,6 +205,7 @@ ul.social > li a.dribbble:hover {
 /* Home Slider
 -------------------------------------------------- */
 #homeCarousel.carousel .container {
+	padding-bottom: 330px;
 	position: relative;
 	z-index: 9;
 }
@@ -360,7 +364,7 @@ ul.social > li a.dribbble:hover {
 	/*padding:130px 0 0px 0;*/
 }
 .service-row {
-	padding:0 120px;
+	padding:40px 0 0 0px;
 }
 .service-span {
 	width:290px;
@@ -676,10 +680,10 @@ ul.social > li a.dribbble:hover {
 /* Newsletter
 -------------------------------------------------- */
 .newsletter {
-	margin:70px -20px 0;
+	margin: 0px 0px 0;
 	background:url(../img/newsletter.jpg) repeat center fixed;
 	background-size: cover !important;
-	border-bottom:9px solid #85c63e;
+	border-bottom:9px solid hsl(44, 4%, 50%);
 }
 .newsletter-box {
     text-align: center;
@@ -1199,7 +1203,7 @@ ul.social > li a.dribbble:hover {
 /* Footer
 -------------------------------------------------- */
 .footer {
-	border-bottom:9px solid #85c63e;
+	border-bottom:9px solid hsl(44, 4%, 50%);
 	text-align:center;
 }
 .footer-span {
