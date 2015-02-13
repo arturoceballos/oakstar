@@ -1,4 +1,4 @@
-<div class="row <?php echo $post->post_name;?>" id="<?php echo $post->post_name;?>">
+<div class="row-fluid <?php echo $post->post_name;?>" id="<?php echo $post->post_name;?>">
     <div class="container">
         <!-- Section Title -->
         <div class="section-title">
