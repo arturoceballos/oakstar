@@ -38,7 +38,7 @@
                     <div class="col-md-5"> -->
                         <div class="video-row" style="background: url('<?php echo $src[0]; ?>') no-repeat;">
                             <iframe width="560" height="315" src="<?php echo types_render_field('youtube-videos', array('output' => 'raw')); ?>" frameborder="0" allowfullscreen></iframe>
-                            <h3><?php the_title(); ?></h3>
+                            <h4><?php the_title(); ?></h4>
                             <h5><?php the_content(); ?></h5>
                             <?php echo date('D. F jS, Y', types_render_field('event-date', array('output' => 'raw'))); ?>
                         </div>
