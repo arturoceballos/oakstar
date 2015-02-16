@@ -681,7 +681,8 @@ ul.social > li a.dribbble:hover {
 -------------------------------------------------- */
 .newsletter {
 	margin: 0px 0px 0;
-	background:url(../img/newsletter.jpg) repeat center fixed;
+	/*background:url(../img/newsletter.jpg) repeat center fixed;*/
+	background-color: hsl(0, 0%, 87%);
 	background-size: cover !important;
 	border-bottom:9px solid hsl(44, 4%, 50%);
 }
@@ -1208,7 +1209,6 @@ ul.social > li a.dribbble:hover {
 }
 .footer-span {
 	padding-bottom:45px;
-    background: url(../img/footer-arrow.png) no-repeat bottom center;
 }
 .scroll-top {
     height: 68px;
@@ -1216,8 +1216,9 @@ ul.social > li a.dribbble:hover {
 	margin:0 auto;
 	padding-bottom:20px;
 }
+
 .scroll-top a {
-    background: url(../img/scroll-top.png) no-repeat;
+    /*background: url(../img/scroll-top.png) no-repeat;*/
     height: 68px;
     width: 68px;
 	display:block;
@@ -1490,7 +1491,7 @@ div.comments-list:nth-child(even) {
 		width:100%;
 	}
 	.navbar .is-sticky ul.nav {
-		background:url(../img/nav-affix-bg.jpg) repeat top center;
+		background:url(../img/navbar-bottom.jpg) repeat top center;
 		background-size: cover !important;
 		border-bottom:9px solid hsla(44, 4%, 50%, 1);
 		width:100%;
@@ -1509,7 +1510,7 @@ div.comments-list:nth-child(even) {
 		width:100%;
 	}
 	.navbar .is-sticky ul.nav {
-		background:url(../img/nav-affix-bg.jpg) repeat top center;
+		background:url(../img/navbar-bottom.jpg) repeat top center;
 		background-size: cover !important;
 		border-bottom:9px solid hsla(44, 4%, 50%, 1);
 		width:100%;
@@ -1534,7 +1535,7 @@ div.comments-list:nth-child(even) {
 		width:100%;
 	}
 	.navbar .is-sticky ul.nav {
-		background:url(../img/nav-affix-bg.jpg) repeat top center;
+		background:url(../img/navbar-bottom.jpg) repeat top center;
 		background-size: cover !important;
 		border-bottom:9px solid hsla(44, 4%, 50%, 1);
 		width:100%;
@@ -1557,7 +1558,7 @@ div.comments-list:nth-child(even) {
 		width:100%;
 	}
 	.navbar .is-sticky ul.nav {
-		background:url(../img/nav-affix-bg.jpg) repeat top center;
+		background:url(../img/navbar-bottom.jpg) repeat top center;
 		background-size: cover !important;
 		border-bottom:9px solid hsla(44, 4%, 50%, 1);
 		width:100%;
@@ -1602,7 +1603,7 @@ div.comments-list:nth-child(even) {
 		width:100%;
 	}
 	.navbar .is-sticky ul.nav {
-		background:url(../img/nav-affix-bg.jpg) repeat top center;
+		background:url(../img/navbar-bottom.jpg) repeat top center;
 		background-size: cover !important;
 		border-bottom:9px solid hsla(44, 4%, 50%, 1);
 		width:100%;
@@ -1725,7 +1726,7 @@ div.comments-list:nth-child(even) {
 		width:100%;
 	}
 	.navbar .is-sticky ul.nav {
-		background:url(../img/nav-affix-bg.jpg) repeat top center;
+		background:url(../img/navbar-bottom.jpg) repeat top center;
 		background-size: cover !important;
 		border-bottom:9px solid hsla(44, 4%, 50%, 1);
 		width:100%;
@@ -1822,7 +1823,7 @@ div.comments-list:nth-child(even) {
 		width:100%;
 	}
 	.navbar .is-sticky ul.nav {
-		background:url(../img/nav-affix-bg.jpg) repeat top center;
+		background:url(../img/navbar-bottom-bg.jpg) repeat top center;
 		background-size: cover !important;
 		border-bottom:9px solid #85c63e;
 		width:100%;
