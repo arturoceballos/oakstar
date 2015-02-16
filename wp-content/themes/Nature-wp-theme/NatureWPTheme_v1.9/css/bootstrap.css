@@ -6584,7 +6584,7 @@ button.close {
   padding-bottom: 210px;
 }
 /*Service Section*/
-.container-fluid-service {
+/*.container-fluid-service {
   flex: 1;
   flex-direction: column;
   align-items: center;
@@ -6610,9 +6610,9 @@ button.close {
   align-items: center;
 }
 .service-row img {
-  /*flex: 3;
+  flex: 3;
   min-width: 321px;
-  max-height: 240px;*/
+  max-height: 240px;
 }
 .services {
   box-shadow: 10px 10px 5px hsla(44, 4%, 50%, 1);
@@ -6636,8 +6636,8 @@ button.close {
   background-color: hsl(36, 100%, 90%);
   text-align: center;
 }
-
-@media screen and (max-width:1030px){
+*/
+/*@media screen and (max-width:1030px){
   body {
     margin: 0 auto;
     display: block;
@@ -6665,14 +6665,17 @@ button.close {
     width: 70%;
     text-align: center;
   }
-}
+}*/
 
 /*Facility Section*/
+.container-fluid-facility {
+  padding-top: 50px;
+}
 
 
 /*Event Section*/
-.pad{
-  padding: 1rem 2rem;
+.margin-events{
+  margin: 3rem 4rem;
 }
 
 .container-fluid-events {
@@ -6687,7 +6690,7 @@ button.close {
   flex-wrap: wrap;
   justify-content: center;
   /*flex-direction: row-reverse*/;
-  align-items: center;
+  align-items: flex-start;
 }
 .events-row {
   /*height: 100px;*/
@@ -6730,14 +6733,17 @@ button.close {
 }
 .media-row {
   width: 700px;
+  padding-bottom: 40px;
   display: flex;
   align-items: center;
   flex-direction: column;
   box-shadow: 10px 10px 5px hsla(44, 4%, 50%, 1);
   background-color: hsla(44, 4%, 85%, 1);
+  margin-bottom: 100px;
 }
 .media-row img {
-  max-width: 300px;
+  width: 100%;
+  /*max-width: 300px;*/
 }
 .media-row h2,h3,p {
   text-align: center;
@@ -6795,7 +6801,7 @@ button.close {
   flex-direction: column;
 }
 .video-row h5 {
-  color: white;
+  color: hsl(0, 0%, 60%);
 }
 
 
