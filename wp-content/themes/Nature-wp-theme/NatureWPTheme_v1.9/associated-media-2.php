@@ -39,7 +39,7 @@
                 $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );
                 ?>
 
-                    <div class="media-row pad-2 margin">
+                    <div class="media-row margin">
                         <img src="<?php echo $src[0]; ?>" alt="'.$title.'">
                         <h2><?php the_title(); ?></h2>
                         <h3><?php echo date('D. F jS, Y', types_render_field('post-date', array('output' => 'raw')));?></h3>
