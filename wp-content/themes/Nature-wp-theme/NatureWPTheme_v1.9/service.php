@@ -6,7 +6,7 @@
             <span><?php $top_title = get_post_meta($post->ID, 'top_title', true);
                 if($top_title != '') echo $top_title; else the_title();?></span>
             </h2>
-            <h3><?php echo get_post_meta( $post->ID, '_cmb_p_sub_title', true ); ?></h3>
+            <!-- <h3><?php echo get_post_meta( $post->ID, '_cmb_p_sub_title', true ); ?></h3> -->
         </div>
         <!--End Section Title-->
 
@@ -34,22 +34,38 @@
                 $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );
                 ?>
 
-                <div class="service-row">
-                    <div class="services" style="background: url('<?php echo $src[0]; ?>') no-repeat;">
-                        <h2><?php the_title(); ?></h2>
-                        <!-- <h3><?php the_content(); ?></h3> -->
-                        <?php echo types_render_field('service-1', array('output' => 'raw')); ?>
-                        <!-- <h2><?php echo date('D. F jS, Y', types_render_field('event-date', array('output' => 'raw'))); ?></h2> -->
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 card-container center-block">
+                <div class="card">
+                    <div class="front" style="background:url('<?php echo $src[0]; ?>') center no-repeat;">
+                        <h2 style="color:#efefef;"><?php the_title();?></h2>
                     </div>
-                    <div class="space"></div>
-                    <div class="writing">
-                        <h5><?php the_content(); ?></h5>
+                    <div class="back" style="text-align:center; padding:auto;">
+                        <h2><?php the_title();?></h2>
+                        <?php the_content(); ?>
                     </div>
                 </div>
+            </div>
                
 
             <?php endwhile; endif; wp_reset_postdata(); ?>
         </div>
         <!--End Content-->
     </div>
+
 </div>
+
+<div class="container-fluid-facility">
+        <!-- Section Title -->
+        <div class="section-title">
+            <h4>
+            <?php echo get_post_meta( $post->ID, '_cmb_p_sub_title', true ); ?>
+            </h4>
+            <?php the_content(); ?>
+        </div>
+        <!--End Section Title-->
+
+        <!--Content-->
+        <div class="row-fluid"><?php echo do_shortcode('[portfolio]');?></div>
+
+        <!--End Content-->
+    </div>

@@ -11,7 +11,7 @@ wp_enqueue_style('bootstrap-responsive', get_template_directory_uri().'/css/boot
 wp_enqueue_style('flexslider', get_template_directory_uri().'/css/flexslider.css', false, false, 'all');
 wp_enqueue_style('font', get_template_directory_uri().'/css/font.css', false, false, 'all');
 wp_enqueue_style('prettyPhoto', get_template_directory_uri().'/css/prettyPhoto.css', false, false, 'all');
-wp_enqueue_style('flipcard', get_template_directory_uri(). '/css/flipcard.css'. false, false, 'all');
+wp_enqueue_style('flipcard', get_template_directory_uri().'/css/flipcard.css', false, false, 'all');
 wp_enqueue_style('font-awesome', get_template_directory_uri(). '/font-awesome-4.3.0/css/font-awesome.min.css'. false, false, 'all');
 
 
