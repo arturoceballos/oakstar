@@ -45,10 +45,9 @@
                         <h3><?php echo date('D. F jS, Y', types_render_field('event-date', array('output' => 'raw')));?></h3>
                         <p><?php the_content();?></p>
                     </div>
-                
+
             <?php endwhile; endif; wp_reset_postdata(); ?>
         </div>
         <!--End Content-->
     </div>
 </div>
-```
