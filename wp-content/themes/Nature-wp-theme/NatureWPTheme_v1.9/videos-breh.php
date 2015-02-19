@@ -1,4 +1,4 @@
-<section id="newsletter" class="newsletter">
+<section id="<?php echo $post->post_name;?>" class="<?php echo $post->post_name;?>">
     <div class="container-fluid-video">
 
         <div class="section-title">
@@ -29,7 +29,7 @@
 ?>
             <?php if ($my_query->have_posts()): while($my_query->have_posts()): $my_query->the_post();
             ?>
-                                        
+
                 <!--<?php
                 $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );
                 ?>-->
