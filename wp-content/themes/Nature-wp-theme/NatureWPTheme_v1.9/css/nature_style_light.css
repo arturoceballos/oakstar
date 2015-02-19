@@ -341,12 +341,13 @@ ul.social > li a.dribbble:hover {
 .navbar .nav > .active a, 
 .navbar .nav > .active a:hover, 
 .navbar .nav > .active a:focus {
-	background: rgba(252, 237, 0, 0.1);
+	background: hsl(21, 27%, 51%);
+    /*background: hsla(21, 27%, 51%, 0.8);*/
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	-o-box-shadow: none;
 	box-shadow: none;
-	color: #85c63e;
+	/*color: #85c63e;*/
 	outline: none;
 }
 
@@ -1208,7 +1209,8 @@ ul.social > li a.dribbble:hover {
 	text-align:center;
 }
 .footer-span {
-	padding-bottom:45px;
+	padding-bottom:20px;
+	padding-top: 20px;
 }
 .scroll-top {
     height: 68px;
@@ -1739,7 +1741,7 @@ div.comments-list:nth-child(even) {
 	}
 
 	.service {
-		border-bottom:9px solid #85C63E;
+		/*border-bottom:9px solid #85C63E;*/
 	}
 	.service-row {
 		padding: 0 100px;
