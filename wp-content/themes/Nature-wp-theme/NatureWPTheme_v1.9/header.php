@@ -32,9 +32,9 @@ global $page, $paged;
         <div id="homeCarousel" class="carousel slide">
             <div class="carousel-inner">
                     <?php
-                        query_posts('post_type=carousel_slider&posts_per_page=-1'); if( have_posts() ) : while( have_posts() ) : the_post(); global $post;
+                        query_posts('post_type=carousel_slider&posts_per_page=-1'); if( have_posts() ) : $postId = 0; while( have_posts() ) : the_post(); global $post;
                     ?>  
-                <div class="item <?php echo get_post_meta( $post->ID, '_cmb_first_slider_active_item', true ); ?>">       
+                <div class="item <?php echo !$postId ? 'active' : '' ?> <?php get_post_meta( $post->ID, '_cmb_first_slider_active_item', true ); ?>">
 					<div class="fill" style="background-image:url('<?php echo get_post_meta( $post->ID, '_cmb_h_slider_image', true ); ?>');">
 						<div class="container">
 							<div class="carousel-caption">
@@ -45,7 +45,7 @@ global $page, $paged;
 					
                 </div>
                     <?php 
-                            endwhile; else :
+                            $postId++; endwhile; else :
                     ?>
             
                     <?php
