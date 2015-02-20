@@ -11,7 +11,7 @@
         <!--End Section Title-->
 
         <!--Content-->
-        <div class="media-content">
+        <div class="media-posts">
             <?php
 
             //get the event custom post types
@@ -41,9 +41,11 @@
 
                     <div class="media-row margin">
                         <img src="<?php echo $src[0]; ?>" alt="'.$title.'">
-                        <h2><?php the_title(); ?></h2>
-                        <h3><?php echo date('D. F jS, Y', types_render_field('post-date', array('output' => 'raw')));?></h3>
-                        <p><?php the_content();?></p>
+                        <div class="media-content">
+                            <h2><?php the_title(); ?></h2>
+                            <h3><?php echo date('D. F jS, Y', types_render_field('post-date', array('output' => 'raw')));?></h3>
+                            <p><?php the_content();?></p>
+                        </div>
                     </div>
                 
             <?php endwhile; endif; wp_reset_postdata(); ?>
