@@ -431,7 +431,7 @@ ul.social > li a.dribbble:hover {
 .other-service-bg {
 	overflow:hidden;
 	background:#f3f2f2;
-	border-bottom:9px solid #85c63e;
+	border-bottom:9px solid hsla(44, 4%, 50%, 1);
 	padding:0px 25px;
 	margin:45px 0 0 30px;
 }
@@ -1611,10 +1611,11 @@ div.comments-list:nth-child(even) {
 		width:100%;
 	}
 
-	h2 {
-		font-size: 34px;
-		line-height:46px;
-	}
+	/*h2 {*/
+		/*font-size: 34px;*/
+		/*line-height:46px;*/
+	/*}*/
+
 	.logo {
 		top:8%;
 	}
@@ -1820,14 +1821,14 @@ div.comments-list:nth-child(even) {
 		display:none;
 	}
 	.navbar .is-sticky .main-nav {
-		background:url(../img/section-arrow.png) no-repeat bottom center;
+		/*background:url(../img/section-arrow.png) no-repeat bottom center;*/
 		padding-bottom:99px;
 		width:100%;
 	}
 	.navbar .is-sticky ul.nav {
-		background:url(../img/navbar-bottom-bg.jpg) repeat top center;
+		/*background:url(../img/navbar-bottom-bg.jpg) repeat top center;*/
 		background-size: cover !important;
-		border-bottom:9px solid #85c63e;
+		border-bottom:9px solid hsla(44, 4%, 50%, 1);
 		width:100%;
 	}
 
@@ -1835,6 +1836,23 @@ div.comments-list:nth-child(even) {
 		font-size: 34px;
 		line-height:46px;
 	}
+
+    h4 {
+        font-size: 26px;
+        line-height: 26px;
+        padding-bottom: 30px;
+    }
+
+    .video-content h5 {
+        padding-bottom: 15px;
+    }
+
+    iframe {
+        width: 441px;
+        height: 283px;
+        margin-bottom: 30px;
+    }
+
 	.logo {
 		top:8%;
 	}
@@ -2069,6 +2087,10 @@ div.comments-list:nth-child(even) {
 ------------------------- */
 @media (max-width: 480px) {
 
+    .section-title {
+        padding-bottom: 30px;
+    }
+
 	h2 {
 		font-size: 24px;
 		line-height:36px;
@@ -2135,6 +2157,21 @@ div.comments-list:nth-child(even) {
 		font-size: 24px;
 		line-height:36px;
 	}
+
+    h4 {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+
+    .video-content h5 {
+        padding-bottom: 20px;
+    }
+
+    iframe {
+        margin-bottom: 30px;
+        width: 361px;
+        height: 238px;
+    }
 	.service-span,
 	.about-span {
 		width:100%;
