@@ -20,11 +20,11 @@
 	outline: none;
 	display: block;
 	position: relative;
-	border-radius: 4px 4px 4px 4px;
-	-moz-border-radius: 4px 4px 4px 4px;
-	-webkit-border-radius: 4px 4px 4px 4px;
-	-o-border-radius: 4px 4px 4px 4px;
-	-ms-border-radius: 4px 4px 4px 4px;
+	border-radius: 10%;
+	-moz-border-radius: 10%;
+	-webkit-border-radius: 10%;
+	-o-border-radius: 10%;
+	-ms-border-radius: 10%;
 }
 
 .og-grid li.og-expanded > a::after {
