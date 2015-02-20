@@ -1,5 +1,6 @@
 /* Global Styles
 -------------------------------------------------- */
+html, body { overflow-x: hidden; }
 body {
 	font-size:12px;
 	color:#8a8a8a;
@@ -1491,6 +1492,7 @@ div.comments-list:nth-child(even) {
 /*		background:url(../img/section-arrow.png) no-repeat bottom center;*/
 		padding-bottom:0px;
 		width:100%;
+        left: 0;
 	}
 	.navbar .is-sticky ul.nav {
 		background:url(../img/navbar-bottom.jpg) repeat top center;
