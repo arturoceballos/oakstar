@@ -1088,15 +1088,15 @@ textarea {
   font-size: inherit;
   line-height: inherit;
 }
-a {
-  color: #337ab7;
-  text-decoration: none;
-}
-a:hover,
-a:focus {
-  color: #23527c;
-  text-decoration: underline;
-}
+/*a {*/
+  /*color: #337ab7;*/
+  /*text-decoration: none;*/
+/*}*/
+/*a:hover,*/
+/*a:focus {*/
+  /*color: #23527c;*/
+  /*text-decoration: underline;*/
+/*}*/
 a:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
@@ -6580,72 +6580,174 @@ button.close {
 
 /*About Section*/
 
+/* line 1, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/about/css/styles.scss */
 .container-fluid-about {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
-    align-items: center;
-}
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+
+/* line 6, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/about/css/styles.scss */
 .about-margin {
-    margin: 1rem 8rem;
-}
+    margin: 1rem 8rem; }
+
+/* line 9, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/about/css/styles.scss */
 .about-img {
     width: 100%;
     height: 100%;
     border-radius: 8%;
-    margin: 1rem 8rem;
-}
+    margin: 1rem 8rem; }
+
+/* line 15, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/about/css/styles.scss */
 .about-content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 100%;
     text-align: center;
-    margin: 1rem 8rem;
-}
+    margin: 1rem 8rem; }
+
+/* line 22, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/about/css/styles.scss */
+.about-content .section-title {
+    padding-bottom: 10px; }
+
 @media screen and (min-width: 790px) and (max-width: 1024px) {
+    /* line 26, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/about/css/styles.scss */
     .about-img {
-        margin: 1rem 4rem;
-    }
+        margin: 1rem 4rem; }
+
+    /* line 29, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/about/css/styles.scss */
     .about-content {
-        margin: 1rem 4rem;
-    }
+        margin: 1rem 4rem; }
 }
 
-@media screen and (min-width: 481px) and (max-width: 789px) {
+@media screen and (min-width: 320px) and (max-width: 789px) {
+    /* line 35, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/about/css/styles.scss */
     .container-fluid-about {
-        display: block;
-    }
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+
+    /* line 38, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/about/css/styles.scss */
     .about-img {
-        width: 80%;
-    }
+        width: 80%; }
+
+    /* line 41, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/about/css/styles.scss */
     .about-content {
-        display: block;
-        width: 80%;
-    }
+        width: 80%; }
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    .container-fluid-about {
-        flex-direction: column;
-    }
-    .about-img {
-        width: 80%;
-    }
-    .about-content {
-        display: block;
-        width: 80%;
-    }
-}
 
 /*Service Section*/
 
-.service-content {
+/* line 1, /Users/arturoceballos/Desktop/My Websites/Oak Star/services-2/css/styles.scss */
+.container-fluid-service {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0; }
+
+/* line 7, /Users/arturoceballos/Desktop/My Websites/Oak Star/services-2/css/styles.scss */
+.service-margin {
+    margin: 1rem 5rem; }
+
+/* line 11, /Users/arturoceballos/Desktop/My Websites/Oak Star/services-2/css/styles.scss */
+.section-title {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 60px; }
+
+/* line 19, /Users/arturoceballos/Desktop/My Websites/Oak Star/services-2/css/styles.scss */
+.service-content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.card-container {
-    margin: 2rem 0rem;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+/* line 23, /Users/arturoceballos/Desktop/My Websites/Oak Star/services-2/css/styles.scss */
+.service-content .service-img {
+    position: relative;
+    width: 40%;
+    max-width: 400px;
+    min-width: 340px;}
+/* line 29, /Users/arturoceballos/Desktop/My Websites/Oak Star/services-2/css/styles.scss */
+.service-content .service-img img {
+    width: 100%;
+    border-radius: 20px;
+    max-height: 300px; }
+/* line 34, /Users/arturoceballos/Desktop/My Websites/Oak Star/services-2/css/styles.scss */
+.service-content .service-img h2 {
+    color: #ffffff;
+    font-size: 35px;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(168, 168, 168, 0.8);
+    border-radius: 0 0 20px 20px;
+    position: absolute;
+    bottom: -10px;
+    padding: 0rem 3rem;}
+/* line 45, /Users/arturoceballos/Desktop/My Websites/Oak Star/services-2/css/styles.scss */
+.service-content .writing {
+    width: 50%; }
+/* line 48, /Users/arturoceballos/Desktop/My Websites/Oak Star/services-2/css/styles.scss */
+.service-content:nth-child(2n) {
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse; }
+
+@media screen and (max-width: 1000px) {
+    /* line 54, /Users/arturoceballos/Desktop/My Websites/Oak Star/services-2/css/styles.scss */
+    .service-content {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center; }
+    /* line 57, /Users/arturoceballos/Desktop/My Websites/Oak Star/services-2/css/styles.scss */
+    .service-content .service-img {
+        min-width: 340px; }
+    .service-content .service-img h2 {
+        padding: 1rem 3rem;
+    }
+    /* line 61, /Users/arturoceballos/Desktop/My Websites/Oak Star/services-2/css/styles.scss */
+    .service-content:nth-child(2n) {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+    /* line 64, /Users/arturoceballos/Desktop/My Websites/Oak Star/services-2/css/styles.scss */
+    .service-content .writing {
+        width: 70%;
+        text-align: center; }
 }
 
 /*Facility Section*/
@@ -6687,156 +6789,267 @@ button.close {
 }
 
 /*Associated Media Page*/
+/* line 1, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/assoc_media/css/styles.scss */
 .pad-2 {
-  padding: 0rem 2rem;
-}
-.margin {
-  margin: 1rem 2rem;
-}
-.container-fluid-media{
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.media-posts {
-  display: flex;
-  flex: 1;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: row;
-  content-align: center;
-  align-items: flex-start;
-}
+    padding: 0rem 2rem; }
 
-.media-row {
-  width: 700px;
-  padding-bottom: 40px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  box-shadow: 10px 10px 5px hsla(44, 4%, 50%, 1);
-  background-color: hsla(44, 4%, 85%, 1);
-  margin-bottom: 100px;
-}
-.media-row img {
-  width: 100%;
-  /*max-width: 300px;*/
-}
-.media-content {
+/* line 4, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/assoc_media/css/styles.scss */
+.margin {
+    margin: 1rem 2rem; }
+
+/* line 7, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/assoc_media/css/styles.scss */
+.container-fluid-media {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+
+/* line 13, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/assoc_media/css/styles.scss */
+.media-posts {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    content-align: center;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+
+/* line 23, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/assoc_media/css/styles.scss */
+.media-row {
+    width: 700px;
+    padding-bottom: 40px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    box-shadow: 10px 10px 5px #85827a;
+    background-color: #dad9d7;
+    margin-bottom: 100px; }
+
+/* line 33, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/assoc_media/css/styles.scss */
+.media-row img {
+    width: 100%
+    /*max-width: 300px;*/ }
+
+/* line 37, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/assoc_media/css/styles.scss */
+.media-content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 80%;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
     align-content: center;
-    align-items: center;
-}
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+
+/* line 44, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/assoc_media/css/styles.scss */
 .media-content h2, h3, p {
-    text-align: center;
-}
+    text-align: center; }
+
+/* line 47, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/assoc_media/css/styles.scss */
 .media-content h2 {
-    width: 80%;
-}
+    width: 80%; }
 
 @media screen and (min-width: 300px) and (max-width: 789px) {
+    /* line 52, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/assoc_media/css/styles.scss */
     .media-row {
         width: 100%;
         padding-bottom: 40px;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
         flex-direction: column;
-        box-shadow: 10px 10px 5px hsla(44, 4%, 50%, 1);
-        background-color: hsla(44, 4%, 85%, 1);
-        margin-bottom: 100px;
-    }
+        box-shadow: 10px 10px 5px #85827a;
+        background-color: #dad9d7;
+        margin-bottom: 100px; }
 }
+
 
 /*Contact Page*/
+/* line 1, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/contact/css/styles.scss */
 #newsletter, .newsletter {
-  padding-top: 130px;
-}
+    padding-top: 130px; }
+
+/* line 4, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/contact/css/styles.scss */
 .contact-3 {
-  background-color: hsl(0, 0%, 30%);
+    background-color: #4d4d4d; }
+
+/* line 8, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/contact/css/styles.scss */
+.pad {
+    padding: 3rem 0; }
+
+/* line 11, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/contact/css/styles.scss */
+.container-fluid-contact {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+
+/* line 17, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/contact/css/styles.scss */
+.contact-content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+
+/* line 26, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/contact/css/styles.scss */
+.contact-content h5 {
+    text-align: center; }
+
+@media (max-width: 480px) {
+    /* line 30, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/contact/css/styles.scss */
+    .map {
+        padding-bottom: 30px; }
 }
 
-.pad{
-  padding: 3rem 0;
-}
-.container-fluid-contact {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.contact-content {
-  display: flex;
-  flex: 1;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-around;
-  flex-direction: row;
-  align-items: center;
-}
-.contact-content h5{
-  text-align: center;
-}
-@media (max-width: 480px) {
-    .map {
-        padding-bottom: 30px;
-    }
-}
 /*Videos Page*/
 
+/* line 1, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/dressage/css/styles.scss */
 iframe {
-    margin-bottom: 40px;
-}
+    margin-bottom: 40px; }
 
+/* line 5, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/dressage/css/styles.scss */
 .video-content h5 {
-    padding-bottom: 30px;
-}
+    padding-bottom: 30px; }
 
+/* line 9, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/dressage/css/styles.scss */
 h4 {
-    padding-bottom: 20px;
-}
+    padding-bottom: 20px; }
 
+/* line 13, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/dressage/css/styles.scss */
 .container-fluid-video {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+
+/* line 19, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/dressage/css/styles.scss */
 .video-content {
-  display: flex;
-  flex: 1;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: column;
-  content-align: center;
-  align-items: center;
-}
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    content-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+
+/* line 28, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/dressage/css/styles.scss */
 .video-row {
-  width: 516px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
+    width: 516px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+
+/* line 34, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/dressage/css/styles.scss */
 .video-row h5 {
-  color: hsl(0, 0%, 60%);
-}
+    color: #999999; }
 
 @media screen and (min-width: 300px) and (max-width: 789px) {
+    /* line 39, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/dressage/css/styles.scss */
     iframe {
         /*min-width: 50%;*/
         /*max-width: 100%;*/
         /*min-height: 50%;*/
-        /*max-height: 100%;*/
-    }
+        /*max-height: 100%;*/ }
+
+    /* line 45, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/dressage/css/styles.scss */
     .video-row {
         width: 70%;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
         align-items: center;
-        flex-direction: column;
-    }
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column; }
 }
+
 
 
 
