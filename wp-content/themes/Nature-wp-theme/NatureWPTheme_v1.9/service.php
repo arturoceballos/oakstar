@@ -7,11 +7,14 @@
                 if($top_title != '') echo $top_title; else the_title();?></span>
             </h2>
             <!-- <h3><?php echo get_post_meta( $post->ID, '_cmb_p_sub_title', true ); ?></h3> -->
+            <div class="list">
+                <p><?php the_content(); ?></p>
+            </div>
         </div>
         <!--End Section Title-->
 
         <!--Content-->
-        <div class="service-content">
+        <div class="service-posts">
             <?php
 
             //get the event custom post types
@@ -20,7 +23,7 @@
                 'post_type'        => $type,
                 'post_status'      => 'publish',
                 'order'            => 'ASC',
-                'orderby'          => 'title',
+                'orderby'          => 'meta_value_num',
                 'posts_per_page'   => -1
             );
 
@@ -31,18 +34,18 @@
             ?>
                 
                 <?php
-                $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );
+                $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 400,400 ), false, '' );
                 ?>
 
-                <div class="card-container">
-                <div class="card">
-                    <div class="front" style="background:url('<?php echo $src[0]; ?>') center no-repeat;">
-                        <h2 style="color:#efefef;"><?php the_title();?></h2>
-                    </div>
-                    <div class="back" style="text-align:center; padding:auto;">
-                        <h2><?php the_title();?></h2>
-                        <?php the_content(); ?>
-                    </div>
+            <div class="service-content">
+                <div class="service-img service-margin">
+                    <img src="<?php echo $src[0]; ?>" alt=""/>
+                    <h2><?php the_title(); ?></h2>
+                    <?php echo types_render_field('service-1', array('output' => 'raw')); ?>
+                </div>
+                <div class="space"></div>
+                <div class="writing service-margin">
+                    <h5><?php the_content(); ?></h5>
                 </div>
             </div>
                
@@ -60,7 +63,7 @@
             <h4>
             <?php echo get_post_meta( $post->ID, '_cmb_p_sub_title', true ); ?>
             </h4>
-            <?php the_content(); ?>
+<!--            --><?php //the_content(); ?>
         </div>
         <!--End Section Title-->
 
@@ -68,4 +71,4 @@
         <div class="row-fluid"><?php echo do_shortcode('[portfolio]');?></div>
 
         <!--End Content-->
-    </div>
+</div>
