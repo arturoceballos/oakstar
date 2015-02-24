@@ -64,7 +64,8 @@ h6 {
     text-align: center;
 }
 a {
-	color:#85c63e;
+	color:hsl(42, 4%, 47%);
+    /*color:hsl(0, 100%, 100%);*/
 	text-decoration:none!important;
 	-webkit-transition: color 1s;
 	-moz-transition: color 1s;
@@ -73,7 +74,8 @@ a {
 	transition: color 1s;
 }
 a:hover {
-	color:#333333;
+	color:hsl(0, 100%, 100%);
+    /*color:hsl(42, 4%, 47%);*/
 }
 #note { 
   color:#ff0000; 
@@ -1490,12 +1492,12 @@ div.comments-list:nth-child(even) {
 	}
 	.navbar .is-sticky .main-nav {
 /*		background:url(../img/section-arrow.png) no-repeat bottom center;*/
-		padding-bottom:0px;
+		padding-bottom:100px;
 		width:100%;
         left: 0;
 	}
 	.navbar .is-sticky ul.nav {
-		background:url(../img/navbar-bottom.jpg) repeat top center;
+		background:url(../img/navbar-bottom-3.jpg) repeat top center;
 		background-size: cover !important;
 		border-bottom:9px solid hsla(44, 4%, 50%, 1);
 		width:100%;
@@ -1514,7 +1516,7 @@ div.comments-list:nth-child(even) {
 		width:100%;
 	}
 	.navbar .is-sticky ul.nav {
-		background:url(../img/navbar-bottom.jpg) repeat top center;
+		background:url(../img/navbar-bottom-3.jpg) repeat top center;
 		background-size: cover !important;
 		border-bottom:9px solid hsla(44, 4%, 50%, 1);
 		width:100%;
@@ -1539,7 +1541,7 @@ div.comments-list:nth-child(even) {
 		width:100%;
 	}
 	.navbar .is-sticky ul.nav {
-		background:url(../img/navbar-bottom.jpg) repeat top center;
+		background:url(../img/navbar-bottom-3.jpg) repeat top center;
 		background-size: cover !important;
 		border-bottom:9px solid hsla(44, 4%, 50%, 1);
 		width:100%;
@@ -1562,7 +1564,7 @@ div.comments-list:nth-child(even) {
 		width:100%;
 	}
 	.navbar .is-sticky ul.nav {
-		background:url(../img/navbar-bottom.jpg) repeat top center;
+		background:url(../img/navbar-bottom-3.jpg) repeat top center;
 		background-size: cover !important;
 		border-bottom:9px solid hsla(44, 4%, 50%, 1);
 		width:100%;
@@ -1607,7 +1609,7 @@ div.comments-list:nth-child(even) {
 		width:100%;
 	}
 	.navbar .is-sticky ul.nav {
-		background:url(../img/navbar-bottom.jpg) repeat top center;
+		background:url(../img/navbar-bottom-3.jpg) repeat top center;
 		background-size: cover !important;
 		border-bottom:9px solid hsla(44, 4%, 50%, 1);
 		width:100%;
@@ -1731,7 +1733,7 @@ div.comments-list:nth-child(even) {
 		width:100%;
 	}
 	.navbar .is-sticky ul.nav {
-		background:url(../img/navbar-bottom.jpg) repeat top center;
+		background:url(../img/navbar-bottom-3.jpg) repeat top center;
 		background-size: cover !important;
 		border-bottom:9px solid hsla(44, 4%, 50%, 1);
 		width:100%;
