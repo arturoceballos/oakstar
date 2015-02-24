@@ -9,6 +9,44 @@
             <p><?php echo get_post_meta( $post->ID, '_cmb_p_sub_title', true ); ?></p>
         </div>
 
+        <div class="events-content">
+            <?php
+
+            //get the event custom post types
+            $type = 'dressage-mules-bios';
+            $args = array(
+                'post_type'        => $type,
+                'post_status'      => 'publish',
+                'order'            => 'ASC',
+                // 'date'             => 'date',
+                'orderby'          => 'meta_value_num',
+                'meta key'         => 'dressage-mules-bios',
+                'posts_per_page'   => -1,
+                // "title" => 'SERVICE TITLE',
+                // "text" => 'SERVICE DETAILS',
+                // "image" => 'SERVICE IMAGE',
+                // "url" => 'SERVICE BUTTON URL',
+            );
+
+            $my_query = null;
+            $my_query = new WP_Query($args);
+            ?>
+            <?php if ($my_query->have_posts()): while($my_query->have_posts()): $my_query->the_post();?>
+
+                <?php
+                $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );
+                ?>
+
+                <div class="events-row margin-events">
+                    <img src="<?php echo $src[0]; ?>" alt="'.$title.'">
+                    <h2><?php the_title(); ?></h2>
+                    <?php echo types_render_field('dressage-mules-bios', array('output' => 'raw')); ?>
+                    <p><?php the_content();?></p>
+                </div>
+
+            <?php endwhile; endif; wp_reset_postdata(); ?>
+        </div>
+
 
 
         <div class="video-content">
