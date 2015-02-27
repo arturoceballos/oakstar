@@ -36,15 +36,18 @@
             <?php if ($my_query->have_posts()): while($my_query->have_posts()): $my_query->the_post();?>
 
                 <?php
-                $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );
+                $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), false, '' );
                 ?>
 
                     <div class="media-row margin">
-                        <img src="<?php echo $src[0]; ?>" alt="'.$title.'">
+                        <div class="media-img">
+                            <img src="<?php echo $src[0]; ?>" alt="'.$title.'">
+                        </div>
                         <div class="media-content">
                             <h2><?php the_title(); ?></h2>
                             <h3><?php echo date('D. F jS, Y', types_render_field('post-date', array('output' => 'raw')));?></h3>
                             <p><?php the_content();?></p>
+                            <a href="<?php echo types_render_field('media-link', array('output' => 'raw')); ?>" target="_blank"><p>Click here to read the full story!</p></a>
                         </div>
                     </div>
                 
