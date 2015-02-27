@@ -6679,6 +6679,22 @@ button.close {
     align-items: center;
     margin-bottom: 60px; }
 
+.section-title ul {
+    padding-left: 0px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+
+.section-title .list {
+    margin-top: 40px;
+}
+
 /* line 19, /Users/arturoceballos/Desktop/My Websites/Oak Star/services-2/css/styles.scss */
 .service-content {
     display: -webkit-flex;
@@ -6753,40 +6769,69 @@ button.close {
 /*Facility Section*/
 
 /*Event Section*/
-.margin-events{
-  margin: 3rem 4rem;
-}
+/* line 1, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/events/css/styles.scss */
+.margin-events {
+    margin: 3rem 4rem; }
 
+/* line 5, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/events/css/styles.scss */
 .container-fluid-events {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
 
+/* line 11, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/events/css/styles.scss */
 .events-content {
-  display: flex;
-  flex: 1;
-  flex-wrap: wrap;
-  justify-content: center;
-  /*flex-direction: row-reverse*/;
-  align-items: flex-start;
-}
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    /*flex-direction: row-reverse*/
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-bottom: 40px;}
+
+/* line 19, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/events/css/styles.scss */
 .events-row {
-  /*height: 100px;*/
-  width: 300px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
+    /*height: 100px;*/
+    width: 300px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+
+/* line 27, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/events/css/styles.scss */
 .events-row img {
-  border-radius: 50%;
-  max-width: 200px;
-  max-height: 200px;
-}
-.events-row h2 , h3, p {
-  text-align: center;
-}
+    border-radius: 50%;
+    max-width: 200px;
+    max-height: 200px; }
+
+/* line 32, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/events/css/styles.scss */
+.events-row h2, h3, p {
+    text-align: center; }
+
 
 /*Associated Media Page*/
 /* line 1, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/assoc_media/css/styles.scss */
@@ -6851,12 +6896,20 @@ button.close {
     background-color: #dad9d7;
     margin-bottom: 100px; }
 
-/* line 33, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/assoc_media/css/styles.scss */
+/* line 34, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/assoc_media/css/styles.scss */
+.media-img {
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-height: 350px; }
+
+/* line 40, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/assoc_media/css/styles.scss */
 .media-row img {
     width: 100%
     /*max-width: 300px;*/ }
 
-/* line 37, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/assoc_media/css/styles.scss */
+/* line 44, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/assoc_media/css/styles.scss */
 .media-content {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -6872,16 +6925,38 @@ button.close {
     -ms-flex-align: center;
     align-items: center; }
 
-/* line 44, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/assoc_media/css/styles.scss */
+/* line 51, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/assoc_media/css/styles.scss */
 .media-content h2, h3, p {
     text-align: center; }
 
-/* line 47, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/assoc_media/css/styles.scss */
+/* line 54, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/assoc_media/css/styles.scss */
 .media-content h2 {
     width: 80%; }
+.media-content p {
+    color: hsl(0, 0%, 20%);
+    font-size: 18px;
+    line-height: 26px;
+}
+.media-content a {
+    border: 2px solid hsl(42, 4%, 47%);
+    padding: 6px;
+    border-radius: 8px;
+}
+/*.media-content a:hover {*/
+    /*border-color: #ffffff;*/
+    /*text-decoration:none!important;*/
+    /*-webkit-transition: border-color 1s ease-in-out;*/
+    /*-moz-transition: border-color 1s ease-in-out;*/
+    /*-o-transition: border-color 1s ease-in-out;*/
+    /*-ms-transition: border-color 1s ease-in-out;*/
+    /*transition: border-color .1s ease-in-out;*/
+/*}*/
+.media-content a p{
+    margin-bottom: 0px;
+}
 
 @media screen and (min-width: 300px) and (max-width: 789px) {
-    /* line 52, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/assoc_media/css/styles.scss */
+    /* line 59, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/assoc_media/css/styles.scss */
     .media-row {
         width: 100%;
         padding-bottom: 40px;
@@ -6898,6 +6973,7 @@ button.close {
         background-color: #dad9d7;
         margin-bottom: 100px; }
 }
+
 
 
 /*Contact Page*/
@@ -6954,11 +7030,45 @@ button.close {
 .contact-content h5 {
     text-align: center; }
 
+/* line 1, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/contact/css/styles.scss */
+/* line 30, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/contact/css/styles.scss */
+.contact-contact {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+
+/* line 6, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/contact/css/styles.scss */
+/* line 42, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/contact/css/styles.scss */
+.social-media-icons {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%; }
+
+/* line 12, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/contact/css/styles.scss */
+/* line 55, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/contact/css/styles.scss */
+.social-media-icons i {
+    font-size: 7rem;
+    padding: 1rem 2rem; }
+
 @media (max-width: 480px) {
-    /* line 30, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/contact/css/styles.scss */
+    /* line 59, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/contact/css/styles.scss */
     .map {
         padding-bottom: 30px; }
 }
+
 
 /*Videos Page*/
 
