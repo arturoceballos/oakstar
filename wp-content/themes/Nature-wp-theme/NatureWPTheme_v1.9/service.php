@@ -22,7 +22,7 @@
             $args = array(
                 'post_type'        => $type,
                 'post_status'      => 'publish',
-                'order'            => 'ASC',
+//                'order'            => 'ASC',
                 'orderby'          => 'meta_value_num',
                 'posts_per_page'   => -1
             );
@@ -34,7 +34,7 @@
             ?>
                 
                 <?php
-                $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 400,400 ), false, '' );
+                $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );
                 ?>
 
             <div class="service-content">
