@@ -11,15 +11,21 @@
 
         <div class="contact-content pad">
             <div class="map"><?php echo do_shortcode('[google_maps id="315"]');?></div>
-            <h4><?php global $more; $more = 0; the_content('');?></h4>
+            <div class="contact-contact">
+                <h4><?php global $more; $more = 0; the_content('');?></h4>
+                <div class="social-media-icons">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i class="fa fa-facebook-square"></i>
+                    </a>
+                    <a href="http://instagram.com/" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank">
+                        <i class="fa fa-twitter-square"></i>
+                    </a>
+                </div>
+            </div>
         </div>
 
-
-            <!--     </div>
-            </div>
-            <div class="col-md-8 col-md-offset-2" style="text-align:center;">
-                <div class="row"><?php echo do_shortcode('[google_maps id="315"]');?></div>
-                <h5><?php global $more; $more = 0; the_content('');?></h5>
-            </div> -->
     </div><!-- end of container --> 
 </div><!-- end of sections -->
