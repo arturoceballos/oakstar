@@ -6831,6 +6831,10 @@ button.close {
 /* line 32, /Users/arturoceballos/Desktop/My Websites/Oak Star/prefixes/events/css/styles.scss */
 .events-row h2, h3, p {
     text-align: center; }
+.events-row h2 {
+    font-size: 28px;
+    line-height: 32px;
+}
 
 
 /*Associated Media Page*/
