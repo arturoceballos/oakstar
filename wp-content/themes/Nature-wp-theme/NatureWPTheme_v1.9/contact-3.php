@@ -14,7 +14,7 @@
             <div class="contact-contact">
                 <h4><?php global $more; $more = 0; the_content('');?></h4>
                 <div class="social-media-icons">
-                    <a href="https://www.facebook.com/" target="_blank">
+                    <a href="https://www.facebook.com/laura.hermanson.9?fref=ts" target="_blank">
                         <i class="fa fa-facebook-square"></i>
                     </a>
                     <a href="http://instagram.com/" target="_blank">
