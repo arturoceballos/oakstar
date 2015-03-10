@@ -37,7 +37,7 @@
                 $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );
                 ?>
 
-                <div class="events-row margin-events">
+                <div class="events-row mule-bios">
                     <img src="<?php echo $src[0]; ?>" alt="'.$title.'">
                     <h2><?php the_title(); ?></h2>
                     <?php echo types_render_field('dressage-mules-bios', array('output' => 'raw')); ?>

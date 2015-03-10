@@ -44,7 +44,16 @@
                         <h2><?php the_title(); ?></h2>
                         <h3><?php echo date('D. F jS, Y', types_render_field('event-date', array('output' => 'raw')));?></h3>
                         <p><?php the_content();?></p>
-                        <button class="btn"><a href = "<?php echo types_render_field('entry', array('output' => 'raw')); ?>" target="_blank"> Entry Form </a></button>
+                        <?php if(types_render_field('entry', array('output' => 'raw')) == null){
+                            echo '';
+
+                        }else{
+                            ?>
+                            <button class="btn"><a href = "<?php echo types_render_field('entry', array('output' => 'raw')); ?>" target="_blank"> Entry Form </a></button>
+                        <?php
+                        }
+
+                        ?>
                     </div>
 
             <?php endwhile; endif; wp_reset_postdata(); ?>

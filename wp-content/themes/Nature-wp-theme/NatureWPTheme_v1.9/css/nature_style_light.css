@@ -201,8 +201,11 @@ ul.social > li a.dribbble:hover {
 	left:0;
 	top:8%;
 	width:100%;
-	z-index:11;
+	z-index:10;
 	text-align: center;
+}
+.logo img {
+    width: 30%;
 }
 
 /* Home Slider
@@ -228,14 +231,14 @@ ul.social > li a.dribbble:hover {
 	left:2.5%;
 }
 #homeCarousel .carousel-control.right {
-	background:url(../img/home-slider/right.png) no-repeat left top;
+	background:url(../img/home-slider/right-2.png) no-repeat left top;
 	right:2.5%;
 }
 #homeCarousel .carousel-control.left:hover {
 	background:url(../img/home-slider/left.png) no-repeat left bottom;
 }
 #homeCarousel .carousel-control.right:hover {
-	background:url(../img/home-slider/right.png) no-repeat left bottom;
+	background:url(../img/home-slider/right-2.png) no-repeat left bottom;
 }
 #homeCarousel.carousel {
 	margin:0;	
@@ -293,7 +296,7 @@ ul.social > li a.dribbble:hover {
 	left: 0;
 	right: 0;
 	z-index: 12;
-	background:url(../img/navbar-top-border.png) repeat-x left top;
+	background:url(../img/navbar-top-border-2.png) repeat-x left top;
 	padding-top:2px;
 	border-bottom:9px solid hsla(44, 4%, 50%, 1);
 }
@@ -2304,5 +2307,13 @@ div.comments-list:nth-child(even) {
 	.photos a.link {
 		right: 30%;
 	}
+
+}
+
+@media (max-width: 640px) {
+    .logo{
+        top:28%;
+
+    }
 
 }
